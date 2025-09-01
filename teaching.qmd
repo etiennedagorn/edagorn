@@ -1,0 +1,92 @@
+---
+title: "Teaching"
+page-layout: article
+---
+
+
+Below are my current and previous courses. Syllabi, slides, and assignments will be posted here.
+
+## Current courses
+
+::: {.cards}
+- ### Introduction to Python *(Undergraduate)*
+  - Weekly labs; final mini-project aligned with UN SDGs.
+  - Topics: data types, control flow, functions, files, basic data analysis, plotting.
+  - **Materials:** *(PDF to be added)*
+
+- ### Duration Models *(Graduate)*
+  - Survival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.
+  - Hands-on in R/Stata with applied examples.
+  - **Materials:** *(PDF to be added)*
+
+- ### Scientific Writing & Public Speaking *(Undergraduate)*
+  - Structure of papers, clarity, figures/tables, presentations, audience design.
+  - **Materials:** *(PDF to be added)*
+
+- ### Public Economics *(Undergraduate)*
+  - Efficiency & equity, taxation, public goods, externalities, social insurance.
+  - **Materials:** *(PDF to be added)*
+
+- ### Introduction to Macroeconomics *(Undergraduate)*
+  - Output, inflation, unemployment; simple models; policy debates.
+  - **Materials:** *(PDF to be added)*
+:::
+
+---
+
+## Quick overview
+
+| Level | Course | Format |
+|---|---|---|
+| UG | Introduction to Python | Weekly labs + project |
+| G  | Duration Models | Lectures + applied sessions |
+| UG | Scientific Writing & Public Speaking | Workshops + presentations |
+| UG | Public Economics | Lectures + problem sets |
+| UG | Introduction to Macroeconomics | Lectures + quizzes |
+
+---
+
+## Previous courses
+
+- Globalization & Development
+- Data Visualization
+- Education Economics
+- Statistics with R
+- Econometrics
+- Causal Inference
+- Introduction to Microeconomics
+- Microeconomics 101 · Microeconomics I · Microeconomics III
+- Macroeconomics I
+
+
+---
+
+## Logistics
+
+::: {.callout-note}
+**Office hours:** by appointment  
+**Email:** etienne.dagorn@univ-lille.fr  
+**Location:** Lille University — LEM
+:::
+
+
+**Policies (short version):**
+
+- Academic integrity: independent work unless collaboration is explicitly allowed.
+- Late work: 1 point per minute late.
+- Accessibility: I’m happy to arrange accommodations—please reach out early.
+
+---
+
+
+## Resources
+
+### In French
+- [Conseils de rédaction CV](./media/conseil_cv.pdf){target="_blank"}  
+- [Conseils de rédaction lettre de motivation ](./media/conseil_LM.pdf){target="_blank"}
+
+### In English
+- [How To Write An Economics Paper?](./media/paperwriting.pdf){target="_blank"} 
+- Writing Tips For Economics Research Papers [1](./media/methodo_econo_dagorn_2020){target="_blank"} & [2](/media/Methodo_article.pdf) 
+
+

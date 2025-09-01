@@ -1,0 +1,40 @@
+---
+title: "Etienne Dagorn"
+about:
+  template: trestles
+  image: files/pic.png
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: file-earmark-text
+      text: CV (PDF)
+      href: files/CV_DAGORN.pdf
+    - icon: envelope
+      text: Email
+      href: mailto:etienne.dagorn@univ-lille.fr
+page-layout: article
+format:
+  html:
+    include-in-header:
+      - text: "<style>
+          .figure-img {
+            width: 10%; /* adjust width here */
+          }
+          </style>"
+---
+
+## Assistant Professor — Lille University (LEM)
+
+I'm an applied microeconomist working on **education economics**, **political economy**, and **experimental economics** (lab, field, and online).  
+My work examines how incentives, norms and information shape educational choices and public decisions.
+
+---
+
+**Methods:** field/lab/online experiments; causal inference; admin data; reproducible workflows.
+
+---
+
+### News
+
+- **2025-09** — Joined Lille University as an Assistant Prof.  
+- **2025-08** - Second paper from my postdoc published in *Applied Economics*

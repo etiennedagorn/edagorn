@@ -1,0 +1,71 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Etienne Dagorn"
+  site-url: ""
+  description: "Assistant Professor, Lille University - LEM"
+  favicon: files/favicon.png
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+    right:
+      - icon: google-scholar
+        text: Scholar
+        href: https://scholar.google.com/citations?user=IzdTiDgAAAAJ&hl=en&oi=ao
+      - icon: orcid
+        text: ORCID
+        href: https://orcid.org/0000-0002-1105-603X
+  page-footer:
+    left: "© {date:yyyy} Etienne Dagorn"
+    right: "Last updated: {date}"
+
+format:
+  html:
+    theme: flatly
+    css: custom.css         # optionnel; retire-le si tu n'as pas de fichier
+    toc: true
+    number-sections: false
+    smooth-scroll: true
+    anchor-sections: true
+    include-after-body:
+      text: |
+        <script>
+        // open external links in new tab
+        document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+            if (!link.href.includes(window.location.hostname)) {
+              link.setAttribute("target", "_blank");
+              link.setAttribute("rel", "noopener");
+            }
+          });
+        });
+        </script>
+    include-in-header:
+      text: |
+        <style>
+          /* Réduire la largeur de la colonne gauche du layout 'trestles' */
+          .about-trestles {
+            display: grid !important;
+            grid-template-columns: 180px 1fr !important; /* ajuste au besoin */
+            align-items: start;
+          }
+          /* Limiter la taille de l'image */
+          .about-trestles .about-image img {
+            max-width: 140px;
+            height: auto;
+          }
+          /* Variante responsive (dé-commente si tu préfères auto-ajusté)
+          .about-trestles { grid-template-columns: min-content 1fr !important; }
+          */
+        </style>
+
+lang: en
+editor: visual

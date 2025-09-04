@@ -23,18 +23,18 @@ format:
           </style>"
 ---
 
-## Assistant Professor — Lille University (LEM)
+## Assistant Professor --- University of Lille (LEM)
 
-I'm an applied microeconomist working on **education economics**, **political economy**, and **experimental economics** (lab, field, and online).  
+I'm an applied microeconomist working on **education economics**, **political economy**, and **experimental economics** (lab, field, and online).\
 My work examines how incentives, norms and information shape educational choices and public decisions.
 
----
+------------------------------------------------------------------------
 
 **Methods:** field/lab/online experiments; causal inference; admin data; reproducible workflows.
 
----
+------------------------------------------------------------------------
 
 ### News
 
-- **2025-09** — Joined Lille University as an Assistant Prof.  
-- **2025-08** - Second paper from my postdoc published in *Applied Economics*
+-   **2025-09** --- Joined Lille University as an Assistant Prof.\
+-   **2025-08** - Second paper from my postdoc published in *Applied Economics*

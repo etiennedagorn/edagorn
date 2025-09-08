@@ -1,45 +1,10 @@
 [
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Below are my current and previous courses. Syllabi, slides, and assignments will be posted here."
-  },
-  {
-    "objectID": "teaching.html#current-courses",
-    "href": "teaching.html#current-courses",
-    "title": "Teaching",
-    "section": "Current courses",
-    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: (PDF to be added)\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R/Stata with applied examples.\nMaterials: (PDF to be added)\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: (PDF to be added)\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
-  },
-  {
-    "objectID": "teaching.html#quick-overview",
-    "href": "teaching.html#quick-overview",
-    "title": "Teaching",
-    "section": "Quick overview",
-    "text": "Quick overview\n\n\n\n\n\n\n\n\nLevel\nCourse\nFormat\n\n\n\n\nUG\nIntroduction to Python\nWeekly labs + project\n\n\nG\nDuration Models\nLectures + applied sessions\n\n\nUG\nScientific Writing & Public Speaking\nWorkshops + presentations\n\n\nUG\nPublic Economics\nLectures + problem sets\n\n\nUG\nIntroduction to Macroeconomics\nLectures + quizzes"
-  },
-  {
-    "objectID": "teaching.html#previous-courses",
-    "href": "teaching.html#previous-courses",
-    "title": "Teaching",
-    "section": "Previous courses",
-    "text": "Previous courses\n\nGlobalization & Development\nData Visualization\nEducation Economics\nStatistics with R\nEconometrics\nCausal Inference\nIntroduction to Microeconomics\nMicroeconomics 101 · Microeconomics I · Microeconomics III\nMacroeconomics I"
-  },
-  {
-    "objectID": "teaching.html#logistics",
-    "href": "teaching.html#logistics",
-    "title": "Teaching",
-    "section": "Logistics",
-    "text": "Logistics\n\n\n\n\n\n\nNote\n\n\n\nOffice hours: by appointment\nEmail: etienne.dagorn@univ-lille.fr\nLocation: Lille University — LEM\n\n\nPolicies (short version):\n\nAcademic integrity: independent work unless collaboration is explicitly allowed.\nLate work: 1 point per minute late.\nAccessibility: I’m happy to arrange accommodations—please reach out early."
-  },
-  {
-    "objectID": "teaching.html#resources",
-    "href": "teaching.html#resources",
-    "title": "Teaching",
-    "section": "Resources",
-    "text": "Resources\n\nIn French\n\nConseils de rédaction CV\n\nConseils de rédaction lettre de motivation\n\n\n\nIn English\n\nHow To Write An Economics Paper?\nWriting Tips For Economics Research Papers 1 & 2"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "research.html",
@@ -77,17 +42,59 @@
     "text": "Work in Progress\n\nThe Marking Lottery in Secondary Education: Assessment and Solutions\nwith Philippe Colo (ETH), Alberto Prati (UCL) & Marion Monnet (IREDU).\nStage: Writing\nThe Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals\nwith Clémence Dedinger (UPC-INRAE).\nStage: Data collection\nKnowledge is in the Air: Air Pollution and Early Educational Development\nwith Valentin Tissot.\nStage: Empirical Analysis"
   },
   {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Below are my current and previous courses. Syllabi, slides, and assignments will be posted here."
+  },
+  {
+    "objectID": "teaching.html#current-courses",
+    "href": "teaching.html#current-courses",
+    "title": "Teaching",
+    "section": "Current courses",
+    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: Class 1\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R/Stata with applied examples.\nMaterials: (To be added)\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: Syllabus\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
+  },
+  {
+    "objectID": "teaching.html#quick-overview",
+    "href": "teaching.html#quick-overview",
+    "title": "Teaching",
+    "section": "Quick overview",
+    "text": "Quick overview\n\n\n\n\n\n\n\n\nLevel\nCourse\nFormat\n\n\n\n\nUG\nIntroduction to Python\nWeekly labs + project\n\n\nG\nDuration Models\nLectures + applied sessions\n\n\nUG\nScientific Writing & Public Speaking\nWorkshops + presentations\n\n\nUG\nPublic Economics\nLectures + problem sets\n\n\nUG\nIntroduction to Macroeconomics\nLectures + quizzes"
+  },
+  {
+    "objectID": "teaching.html#previous-courses",
+    "href": "teaching.html#previous-courses",
+    "title": "Teaching",
+    "section": "Previous courses",
+    "text": "Previous courses\n\nGlobalization & Development\nData Visualization\nEducation Economics\nStatistics with R\nEconometrics\nCausal Inference\nIntroduction to Microeconomics\nMicroeconomics 101 · Microeconomics I · Microeconomics III\nMacroeconomics I"
+  },
+  {
+    "objectID": "teaching.html#logistics",
+    "href": "teaching.html#logistics",
+    "title": "Teaching",
+    "section": "Logistics",
+    "text": "Logistics\n\n\n\n\n\n\nNote\n\n\n\nOffice hours: by appointment\nEmail: etienne.dagorn@univ-lille.fr\nLocation: Lille University — LEM\n\n\nPolicies (short version):\n\nAcademic integrity: independent work unless collaboration is explicitly allowed.\nLate work: 1 point per minute late.\nAccessibility: I’m happy to arrange accommodations—please reach out early."
+  },
+  {
+    "objectID": "teaching.html#resources",
+    "href": "teaching.html#resources",
+    "title": "Teaching",
+    "section": "Resources",
+    "text": "Resources\n\nIn French\n\nConseils de rédaction CV\nConseils de rédaction lettre de motivation\nTravailler avec des co-auteurs\n\n\n\nIn English\n\nHow To Write An Economics Paper?\nWriting Tips For Economics Research Papers 1 & 2"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Etienne Dagorn",
     "section": "",
-    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined Lille University as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html#assistant-professor-university-of-lille-lem",
+    "href": "index.html#assistant-professor-university-of-lille-lem",
+    "title": "Etienne Dagorn",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
   }
 ]

@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - files/CV_DAGORN.pdf
+
 
 website:
   title: "Etienne Dagorn"
@@ -24,8 +27,8 @@ website:
         text: ORCID
         href: https://orcid.org/0000-0002-1105-603X
   page-footer:
-    left: "© {date:yyyy} Etienne Dagorn"
-    right: "Last updated: {date}"
+    left: "© {date:09/2025} Etienne Dagorn"
+    right: "Last updated: 09/2025"
 
 format:
   html:

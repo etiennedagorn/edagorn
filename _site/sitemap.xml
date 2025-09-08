@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/teaching.html</loc>
-    <lastmod>2025-09-01T12:29:09.840Z</lastmod>
+    <loc>/about.html</loc>
+    <lastmod>2025-09-02T05:26:22.000Z</lastmod>
   </url>
   <url>
     <loc>/research.html</loc>
-    <lastmod>2025-09-01T12:29:10.581Z</lastmod>
+    <lastmod>2025-09-02T05:26:22.000Z</lastmod>
+  </url>
+  <url>
+    <loc>/teaching.html</loc>
+    <lastmod>2025-09-08T17:59:36.112Z</lastmod>
   </url>
   <url>
     <loc>/index.html</loc>
-    <lastmod>2025-09-01T12:41:49.771Z</lastmod>
-  </url>
-  <url>
-    <loc>/about.html</loc>
-    <lastmod>2025-09-01T12:29:12.931Z</lastmod>
+    <lastmod>2025-09-08T17:58:13.643Z</lastmod>
   </url>
 </urlset>

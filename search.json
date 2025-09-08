@@ -53,7 +53,7 @@
     "href": "teaching.html#current-courses",
     "title": "Teaching",
     "section": "Current courses",
-    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: Page Github\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R/Stata with applied examples.\nMaterials: (To be added)\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: Page Github\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
+    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: Class 1\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R/Stata with applied examples.\nMaterials: (To be added)\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: Syllabus\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
   },
   {
     "objectID": "teaching.html#quick-overview",
@@ -88,13 +88,13 @@
     "href": "index.html",
     "title": "Etienne Dagorn",
     "section": "",
-    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined Lille University as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
   },
   {
-    "objectID": "index.html#assistant-professor-lille-university-lem",
-    "href": "index.html#assistant-professor-lille-university-lem",
+    "objectID": "index.html#assistant-professor-university-of-lille-lem",
+    "href": "index.html#assistant-professor-university-of-lille-lem",
     "title": "Etienne Dagorn",
     "section": "",
-    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined Lille University as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
   }
 ]

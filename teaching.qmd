@@ -14,7 +14,7 @@ Below are my current and previous courses. Syllabi, slides, and assignments will
 
     -   Weekly labs; final mini-project aligned with UN SDGs.
     -   Topics: data types, control flow, functions, files, basic data analysis, plotting.
-    -   **Materials:** [Class 1](./media/py_seance_1.pdf){target="_blank"}
+    -   **Materials:** [Class 1](./media/py_seance_1.pdf){target="_blank"} [Class 2](./media/py_seance_2.pdf){target="_blank"}
 
 -   
 
@@ -62,15 +62,7 @@ Below are my current and previous courses. Syllabi, slides, and assignments will
 
 ## Previous courses
 
--   Globalization & Development
--   Data Visualization
--   Education Economics
--   Statistics with R
--   Econometrics
--   Causal Inference
--   Introduction to Microeconomics
--   Microeconomics 101 · Microeconomics I · Microeconomics III
--   Macroeconomics I
+-   Complete list on my [resume](./media/CV_DAGORN.pdf){target="_blank"}
 
 ------------------------------------------------------------------------
 

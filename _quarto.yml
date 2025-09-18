@@ -2,12 +2,12 @@ project:
   type: website
   output-dir: _site
   resources:
-    - files/CV_DAGORN.pdf
+    - media/CV_DAGORN.pdf
 
 
 website:
   title: "Etienne Dagorn"
-  site-url: ""
+  site-url: "https://etiennedagorn.github.io/edagorn"
   description: "Assistant Professor, Lille University - LEM"
   favicon: files/favicon.png
   navbar:

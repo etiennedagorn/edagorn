@@ -8,7 +8,7 @@ about:
   links:
     - icon: file-earmark-text
       text: CV (PDF)
-      href: files/CV_DAGORN.pdf
+      href: https://www.dropbox.com/scl/fi/8ubd4j2w7lcbr4nnnckmy/CV_DAGORN.pdf?rlkey=ui5uu6h1edjcjivx4h27huxbt&st=g25cp79z&dl=0
     - icon: envelope
       text: Email
       href: mailto:etienne.dagorn@univ-lille.fr

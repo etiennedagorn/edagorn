@@ -69,10 +69,24 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
-  .callout-note p {
-    text-align: justify;
+  /* Barre d’actions sous chaque publication */
+  .pub-actions{
+    display:flex; gap:.5rem; flex-wrap:wrap; margin:.4rem 0 0.6rem 0;
   }
+  .pub-btn{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.25rem .55rem; border-radius:999px;
+    border:1px solid #e5e7eb; background:#fff; text-decoration:none;
+    font-size:.85rem; line-height:1.2;
+  }
+  .pub-btn:hover{ background:#f8fafc; border-color:#d1d5db; }
+  .pub-btn.pdf      { border-color:#fecaca; background:#fff5f5; }
+  .pub-btn.repo     { border-color:#c7d2fe; background:#eef2ff; }
+  .pub-btn.supp     { border-color:#bbf7d0; background:#f0fdf4; }
+  .pub-btn .bi{ font-size:1rem; }
 </style>
 
 
@@ -176,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Reproducibility in Management Science</strong><br>
 Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., &amp; <em>Management Science Reproducibility Collaboration</em> (2024).<br>
 <em>Management Science</em>, 70(3), 1343-1356.<br>
-<span class="badge bg-info">Collaboration</span> Member of the MS Reproducibility Collaboration. <span class="badge bg-success"></span></p>
+<span class="badge bg-info">Collaboration</span> Member of the MS Reproducibility Collaboration.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -197,7 +211,10 @@ Abstract
 </div></li>
 <li><p><strong>The role of populations’ behavioral traits in policy-making during a global crisis: Worldwide evidence</strong><br>
 Dagorn, E., Dattilo, M., &amp; Pourieux, M. (2024).<br>
-<em>Journal of Economic Behavior &amp; Organization</em>, 226, 106662. <span class="badge bg-success"></span></p>
+<em>Journal of Economic Behavior &amp; Organization</em>, 226, 106662.</p>
+<div class="pub-actions">
+<a class="pub-btn pdf" href="./files/papers/Dagorn_JEBO_2024.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/m3xka/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Replication </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2024.06.040" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -218,7 +235,10 @@ Abstract
 </div></li>
 <li><p><strong>Dropping out of university in response to the COVID-19 pandemic</strong><br>
 Dagorn, E., &amp; Moulin, L. (2025).<br>
-<em>Economics of Education Review</em>, 104, 102604. <span class="badge bg-success"></span></p>
+<em>Economics of Education Review</em>, 104, 102604.</p>
+<div class="pub-actions">
+<a class="pub-btn pdf" href="./files/papers/Dagorn_Eco_Educ_R_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/djyg5/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Replication </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.econedurev.2024.102604" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -239,7 +259,10 @@ Abstract
 </div></li>
 <li><p><strong>Altruism, Cooperativeness and Academic Achievement: A Lab in the Field Experiment in French Middle Schools</strong><br>
 Dagorn, E., Masclet, D., &amp; Penard, T. (2025).<br>
-<em>Education Economics</em>, 1-28. <span class="badge bg-success"></span></p>
+<em>Education Economics</em>, 1-28.</p>
+<div class="pub-actions">
+<a class="pub-btn pdf" href="./files/papers/Dagorn_educ_econ_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/q9vax/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Replication </a> <a class="pub-btn supp" href="https://doi.org/10.1080/09645292.2025.2450424" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -260,7 +283,10 @@ Abstract
 </div></li>
 <li><p><strong>The limits of behavioral nudges to increase youth turnout: Experimental evidence from two French elections</strong><br>
 Romaniuc, R. <em>et al.</em> (2025).<br>
-<em>Journal of Economic Behavior &amp; Organization</em>, 236, 107098. <span class="badge bg-success"></span></p>
+<em>Journal of Economic Behavior &amp; Organization</em>, 236, 107098.</p>
+<div class="pub-actions">
+<a class="pub-btn pdf" href="./files/papers/Rustam_Vote_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a><a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2025.107098" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -281,7 +307,7 @@ Abstract
 </div></li>
 <li><p><strong>Shifting preferences: COVID-19 and higher education application</strong><br>
 Dagorn, E., Meroni, E. C., &amp; Moulin, L. (2025).<br>
-<em>Applied Economics</em>, 1-16. <span class="badge bg-success"></span></p>
+<em>Applied Economics</em>, 1-16.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -307,7 +333,10 @@ Abstract
 <h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
 <ol type="1">
 <li><p><em>Social Pressure and Pro-social Behaviors Among Teenagers</em><br>
-<span class="badge bg-warning text-dark">R&amp;R</span> <em>Applied Economics</em> <span class="badge bg-success"></span></p>
+<span class="badge bg-warning text-dark">R&amp;R</span> <em>Applied Economics</em></p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="https://osf.io/preprints/psyarxiv/r4wc5_v2f" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a></p>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -328,7 +357,10 @@ Abstract
 </div></li>
 <li><p><em>Beyond Wealth and Governance in Terrestrial Protected Area Coverage: The Role of Population Behavioural Traits</em><br>
 with Cathleen Petit (FRB) &amp; Valentin Journe (Adam Mickiewicz University).<br>
-<span class="badge bg-secondary">Submitted</span> <span class="badge bg-success"></span></p>
+<span class="badge bg-secondary">Submitted</span></p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="https://osf.io/preprints/psyarxiv/eg78h_v2" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://github.com/ValentinJourne/EconomyEcologyPA" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Replication </a></p>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -349,7 +381,10 @@ Abstract
 </div></li>
 <li><p><em>Determinants of Gender Discrimination by Teachers: Evidence from an online experiment</em><br>
 with Marion Monnet (Burgundy) &amp; Philippe Colo (Bern).<br>
-<span class="badge bg-secondary">Submitted</span> <span class="badge bg-success"></span></p>
+<span class="badge bg-secondary">Submitted</span></p>
+<div class="pub-actions">
+<a class="pub-btn pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5254180" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

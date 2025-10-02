@@ -1,151 +1,289 @@
 ---
 title: "Research"
 page-layout: article
-
+toc: true
+toc-depth: 2
 format:
   html:
     include-in-header:
       text: |
+        <!-- Icônes Bootstrap -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <style>
-          .callout-note p {
-            text-align: justify;
+          /* Conteneur publication */
+          .pub { margin: .75rem 0 1.25rem; }
+          .pub h3 { margin: 0 0 .2rem 0; font-size: 1.05rem; }
+          .pub-meta { color:#6b7280; font-size:.9rem; }
+          .kw { display:inline-block; margin:.15rem .25rem .15rem 0; font-size:.75rem; }
+          /* Barre d’actions */
+          .pub-actions{
+            display:flex; gap:.5rem; flex-wrap:wrap; margin:.45rem 0 .6rem 0;
           }
+          .pub-btn{
+            display:inline-flex; align-items:center; gap:.4rem;
+            padding:.28rem .6rem; border-radius:999px;
+            border:1px solid #e5e7eb; background:#fff; text-decoration:none;
+            font-size:.85rem; line-height:1.2;
+          }
+          .pub-btn:hover{ background:#f8fafc; border-color:#d1d5db; }
+          .pub-btn.pdf  { border-color:#fecaca; background:#fff5f5; }
+          .pub-btn.repo { border-color:#c7d2fe; background:#eef2ff; }
+          .pub-btn.supp { border-color:#bbf7d0; background:#f0fdf4; }
+          .pub-btn .bi{ font-size:1rem; }
+          /* Liste numérotée plus aérée quand HTML imbriqué */
+          ol > li { margin-bottom: 1.1rem; }
+          /* Filtres (optionnels) */
+          .filters { display:flex; flex-wrap:wrap; gap:.5rem; margin:.6rem 0 1rem; }
+          .filters .chip{
+            border:1px solid #e5e7eb; border-radius:999px; padding:.2rem .55rem;
+            cursor:pointer; user-select:none; font-size:.85rem; background:#fff;
+          }
+          .filters .chip.active{ background:#111827; color:#fff; border-color:#111827; }
+          .muted { color:#6b7280; font-size:.9rem; }
         </style>
+        <script>
+          // Filtre simple par data-year / data-tags (optionnel)
+          document.addEventListener('DOMContentLoaded', () => {
+            const chips = document.querySelectorAll('[data-filter]');
+            chips.forEach(ch => ch.addEventListener('click', () => {
+              const val = ch.getAttribute('data-filter');
+              const scope = ch.closest('.filters');
+              scope.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+              ch.classList.add('active');
+              const items = document.querySelectorAll('[data-pub]');
+              items.forEach(it => {
+                if (val === 'all') { it.style.display = ''; return; }
+                const year = it.getAttribute('data-year');
+                const tags = (it.getAttribute('data-tags')||'').toLowerCase();
+                it.style.display = (year===val || tags.includes(val)) ? '' : 'none';
+              });
+            }));
+          });
+        </script>
 ---
 
 [Publications](#publications) · [Working Papers](#working-papers) · [Work in Progress](#work-in-progress)
 
-## Key Words
-Pro social behaviors - Education- Policy making - External validity
+## Keywords
 
-## Publications
-
-1. **Reproducibility in Management Science**  
-   Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., & *Management Science Reproducibility Collaboration* (2024).  
-   *Management Science*, 70(3), 1343-1356.  
-   <span class="badge bg-info">Collaboration</span> Member of the MS Reproducibility Collaboration.
-     <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-   With the help of more than 700 reviewers, we assess the reproducibility of nearly 500 articles published in the journal Management Science before and after the introduction of a new Data and Code Disclosure policy in 2019. When considering only articles for which data accessibility and hardware and software requirements were not an obstacle for reviewers, the results of more than 95% of articles under the new disclosure policy could be fully or largely computationally reproduced. However, for 29% of articles, at least part of the data set was not accessible to the reviewer. Considering all articles in our sample reduces the share of reproduced articles to 68%. These figures represent a significant increase compared with the period before the introduction of the disclosure policy, where only 12% of articles voluntarily provided replication materials, of which 55% could be (largely) reproduced. Substantial heterogeneity in reproducibility rates across different fields is mainly driven by differences in data set accessibility. Other reasons for unsuccessful reproduction attempts include missing code, unresolvable code errors, weak or missing documentation, and software and hardware requirements and code complexity. Our findings highlight the importance of journal code and data disclosure policies and suggest potential avenues for enhancing their effectiveness.
-   </div>
-   :::
-
-2. **The role of populations’ behavioral traits in policy-making during a global crisis: Worldwide evidence**  
-   Dagorn, E., Dattilo, M., & Pourieux, M. (2024).  
-   *Journal of Economic Behavior & Organization*, 226, 106662.
-     <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-Substantial heterogeneity in behavioral traits has been observed across human societies, which have been linked to important differences in individual as well as societal outcomes. In this paper, we complement the existing literature by investigating the role of key behavioral traits, i.e. risk-taking, patience, altruism, and trust, at the population level in the design of new policies and institutions during an unexpected global crisis. Combining granular data on policy responses to the COVID-19 crisis with several pre-pandemic survey measures of behavioral traits in 109 countries, we observe robust relationships of significant magnitude. In particular, our findings underline that countries with higher levels of trust tended to respond later to the crisis; while populations that are patient, altruistic, and trusting are more likely to implement stringent policies in the medium and long-term. These results improve our understanding of how countries deal with global crises. They also supply an explanation for the lack of coordinated response at the international level during such events.
-   </div>
-   :::
-   
-3. **Dropping out of university in response to the COVID-19 pandemic**  
-   Dagorn, E., & Moulin, L. (2025).  
-   *Economics of Education Review*, 104, 102604.
-   <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-This study empirically examines the impact of the COVID-19 pandemic on university students’ enrollment behaviors using a comprehensive database of university enrollments from 2012 to 2022. Our analysis reveals a 3.7% decline in the probability of re-enrollment for the subsequent academic year among the first cohort affected by the pandemic. This effect is particularly pronounced among students entering university, as well as among non-free lunch students, international students, and male students. The medium-term analysis indicates that the pandemic led to a significant shift in enrollment behaviors, decreasing the likelihood of enrolling in subsequent years and reducing graduation rates two years after the pandemic. Moreover, we find that exposure to stricter lockdown policies led to a 3.8% decrease in enrollment behaviors. We investigate three potential mechanisms: (i) exposure to the pandemic, (ii) labor market opportunities, and (iii) university quality. However, we find little evidence to support that these factors are significantly associated with changes in enrollment behaviors. These findings contribute to our understanding of the disruptive consequences of the COVID-19 pandemic on students’ educational trajectories and highlight its lasting impact on enrollment behaviors.
-</div>
-   :::
-
-4. **Altruism, Cooperativeness and Academic Achievement: A Lab in the Field Experiment in French Middle Schools**  
-   Dagorn, E., Masclet, D., & Penard, T. (2025).  
-   *Education Economics*, 1-28.
-      <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-In this exploratory study, we investigate how altruism and cooperativeness are related to educational achievement. We run a lab in the field experiment with pupils from Middle Schools in Brittany, France, to study whether altruism and cooperativeness are correlated with educational success. Contrary to expectation, we find no significant relationship between cooperativeness and educational performance. In contrast, altruism is negatively related to academic achievement, but this relationship is gender-driven, as it is only significant for boys.
-</div>
-   :::
-5. **The limits of behavioral nudges to increase youth turnout: Experimental evidence from two French elections**  
-   Romaniuc, R. *et al.* (2025).  
-   *Journal of Economic Behavior & Organization*, 236, 107098.
-     <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-There is a significant gap in turnout between young people and older voters. The failure to instill a voting habit at an early age may have long term consequences in terms of future political participation as well as on other civic behaviors. Using a pre-registered online experiment with 3790 subjects, we implemented behavioral interventions aiming to stimulate youth turnout in the 2022 French presidential election. We rely on an innovative incentive scheme to measure their consequences on (self-reported) actual voting behavior. We also provide evidence on the effect of one behavioral intervention on youth turnout in a less salient election, the French legislative election that took place two months after the Presidential one. The results from the two experiments show the absence of any differences in turnout between the baseline and the treatment conditions. We investigate several mechanisms that can explain our results.
-</div>
-   :::
-   
-6. **Shifting preferences: COVID-19 and higher education application**  
-   Dagorn, E., Meroni, E. C., & Moulin, L. (2025).  
-   *Applied Economics*, 1-16.
-     <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-This study provides descriptive evidence on how the COVID-19 pandemic influenced secondary school students’ application patterns to higher education in France, offering insights into the reallocation of preferences across academic fields and degree types. Using detailed administrative data, we document significant shifts in application shares during 2021, with increased interest in competitive tracks and concurrent declines in applications to bachelor’s and vocational programs. These findings suggest that students responded to the pandemic by favouring structured and selective pathways with clear labour market prospects, moving away from generalist degrees. Students’ share of applications to STEM degrees increased, while applications to health and business programs remained stable. We then analyse the probability of applying to at least one program in a given field or degree and find a decline in application diversification: students narrowed their choices to fewer fields, reflecting a more risk-averse and selective approach in response to the pandemic. Our analysis highlights substantial heterogeneity in these effects across demographic groups.
-</div>
-   :::
----
-
-## Working Papers
-
-1. *Social Pressure and Pro-social Behaviors Among Teenagers*  
-   <span class="badge bg-warning text-dark">R&R</span> *Applied Economics*
-     <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-This study investigates the influence of social pressure on prosocial behaviors among adolescents through a lab-in-the-field experiment. Using a controlled environment where teenagers interact with their classmates, I examine the evolution of cooperation over repeated interactions and explore its determinants. I find that girls and altruistic pupils demonstrate higher levels of cooperation. The introduction of non-monetary rewards and punishments, serving as forms of social pressure, significantly enhances cooperation among adolescents, aligning their behavior with group’s cooperation. Surprisingly, the study finds that the intensity of social pressure does not directly impact cooperation, suggesting that adolescents adapt their pro-social behavior in response to social pressure awareness. This study demonstrates that peer-enforced norms sustain cooperation among adolescents, even in the absence of material incentives.
-</div>
-   :::
-
-2. *Beyond Wealth and Governance in Terrestrial Protected Area Coverage: The Role of Population Behavioural Traits*  
-   with Cathleen Petit (FRB) & Valentin Journe (Adam Mickiewicz University).  
-   <span class="badge bg-secondary">Submitted</span>
-       <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-Biodiversity loss demands urgent action, and protected areas are one of the cornerstones of biodiversity conservation measures. While conservation efforts are known to be driven by economic and political factors, there is an absence of literature addressing the potential role played by behavioural traits at the population level. We investigate how population-level behavioural traits influence the proportion of terrestrial protected areas by using large-scale cross-cultural surveys and geospatial data from 71 countries. We show that behavioural traits explain more variation in protected area coverage than economic indicators alone. Furthermore, trust is negatively associated with protected area coverage at the country level, suggesting that high-trust societies rely more on informal conservation practices. These findings challenge conventional models focused on economic and governance drivers and highlight the need for policies that align with population behaviours. Integrating behavioural insights into conservation planning could unlock more effective biodiversity conservation strategies in the era of environmental changes.
-</div>
-   :::
-
-3. *Determinants of Gender Discrimination by Teachers: Evidence from an online experiment*  
-   with Marion Monnet (Burgundy) & Philippe Colo (Bern).  
-   <span class="badge bg-secondary">Submitted</span>
-       <span class="badge bg-success"></span>  
-
-   ::: {.callout-note collapse="true"}
-   ### Abstract
-   <div class="justify">
-This paper examines whether teachers' gender biases stem from discrimination, and focuses on two of its potential drivers: gender preferences and beliefs. In an online experiment, 1,840 teachers evaluated fictitious transcripts with randomized gender information. Preferences were measured via dictator games, and beliefs through an Implicit Association Test. While teachers showed no gender preferences, they did hold gender beliefs. Analyzing 19,000 transcript evaluations, we find no evidence of gender-based discrimination. Our findings suggest that simply disclosing a student's gender does not trigger discrimination, implying that such behaviours are more likely to emerge during direct student-teacher interactions.
-</div>
-   :::
-   
-4. *Les expériences sur les préférences individuelles et sociales des enfants et des adolescents: une revue de la littérature*  
-   with David Masclet (Rennes 1) & Thierry Penard (Rennes 1).  
-   <span class="badge bg-secondary">Submitted</span>
+<span class="badge bg-light text-dark kw">Prosocial behavior</span>
+<span class="badge bg-light text-dark kw">Education</span>
+<span class="badge bg-light text-dark kw">Policy</span>
+<span class="badge bg-light text-dark kw">External validity</span>
 
 ---
 
-## Work in Progress
+## Publications {#publications}
 
-1. *The Marking Lottery in Secondary Education: Assessment and Solutions*  
-   with Philippe Colo (ETH), Alberto Prati (UCL) & Marion Monnet (IREDU).  
-   <span class="badge bg-light text-dark">Stage: Writing</span>
+<div class="filters">
+  <span class="muted">Filter:</span>
+  <span class="chip active" data-filter="all">All</span>
+  <span class="chip" data-filter="2025">2025</span>
+  <span class="chip" data-filter="2024">2024</span>
+  <span class="chip" data-filter="education">education</span>
+  <span class="chip" data-filter="experiment">experiment</span>
+  <span class="chip" data-filter="covid">covid</span>
+</div>
 
-2. *The Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals*  
-   with Clémence Dedinger (UPC-INRAE).  
-   <span class="badge bg-light text-dark">Stage: Data collection</span>
+1.  <div class="pub" data-pub data-year="2024" data-tags="reproducibility,meta-science">
+    <h3><strong>Reproducibility in Management Science</strong></h3>
+    <div class="pub-meta">
+      Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., &amp; <em>Management Science Reproducibility Collaboration</em> (2024).<br>
+      <em>Management Science</em>, 70(3), 1343–1356.
+      <span class="badge bg-info text-dark">Collaboration</span> Member of the MS Reproducibility Collaboration.
+    </div>
 
-3. *Knowledge is in the Air: Air Pollution and Early Educational Development*  
-   with Valentin Tissot.  
-   <span class="badge bg-light text-dark">Stage: Empirical Analysis</span>
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+    With the help of more than 700 reviewers, we assess the reproducibility of nearly 500 articles published in the journal Management Science before and after the introduction of a new Data and Code Disclosure policy in 2019. When considering only articles for which data accessibility and hardware and software requirements were not an obstacle for reviewers, the results of more than 95% of articles under the new disclosure policy could be fully or largely computationally reproduced. However, for 29% of articles, at least part of the data set was not accessible to the reviewer. Considering all articles in our sample reduces the share of reproduced articles to 68%. These figures represent a significant increase compared with the period before the introduction of the disclosure policy, where only 12% of articles voluntarily provided replication materials, of which 55% could be (largely) reproduced. Substantial heterogeneity in reproducibility rates across different fields is mainly driven by differences in data set accessibility. Other reasons for unsuccessful reproduction attempts include missing code, unresolvable code errors, weak or missing documentation, and software and hardware requirements and code complexity. Our findings highlight the importance of journal code and data disclosure policies and suggest potential avenues for enhancing their effectiveness.
+    ::::
+    </div>
+
+
+2.  **The role of populations’ behavioral traits in policy-making during a global crisis: Worldwide evidence**\
+    Dagorn, E., Dattilo, M., & Pourieux, M. (2024).\
+    *Journal of Economic Behavior & Organization*, 226, 106662.
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="/files/papers/Dagorn_JEBO_2024.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      <a class="pub-btn repo" href="https://osf.io/m3xka/" target="_blank" rel="noopener">
+      <i class="bi bi-git"></i> Replication
+      </a>
+      <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2024.06.040" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> DOI / Archive
+      </a>
+  </div>
+
+
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    Substantial heterogeneity in behavioral traits has been observed across human societies, which have been linked to important differences in individual as well as societal outcomes. In this paper, we complement the existing literature by investigating the role of key behavioral traits, i.e. risk-taking, patience, altruism, and trust, at the population level in the design of new policies and institutions during an unexpected global crisis. Combining granular data on policy responses to the COVID-19 crisis with several pre-pandemic survey measures of behavioral traits in 109 countries, we observe robust relationships of significant magnitude. In particular, our findings underline that countries with higher levels of trust tended to respond later to the crisis; while populations that are patient, altruistic, and trusting are more likely to implement stringent policies in the medium and long-term. These results improve our understanding of how countries deal with global crises. They also supply an explanation for the lack of coordinated response at the international level during such events.
+    :::
+    ::::
+
+3.  **Dropping out of university in response to the COVID-19 pandemic**\
+    Dagorn, E., & Moulin, L. (2025).\
+    *Economics of Education Review*, 104, 102604.
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="/files/papers/Dagorn_Eco_Educ_R_2025.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      <a class="pub-btn repo" href="https://osf.io/djyg5/" target="_blank" rel="noopener">
+      <i class="bi bi-git"></i> Replication
+      </a>
+      <a class="pub-btn supp" href="https://doi.org/10.1016/j.econedurev.2024.102604" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> DOI / Archive
+      </a>
+  </div>
+  
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    This study empirically examines the impact of the COVID-19 pandemic on university students’ enrollment behaviors using a comprehensive database of university enrollments from 2012 to 2022. Our analysis reveals a 3.7% decline in the probability of re-enrollment for the subsequent academic year among the first cohort affected by the pandemic. This effect is particularly pronounced among students entering university, as well as among non-free lunch students, international students, and male students. The medium-term analysis indicates that the pandemic led to a significant shift in enrollment behaviors, decreasing the likelihood of enrolling in subsequent years and reducing graduation rates two years after the pandemic. Moreover, we find that exposure to stricter lockdown policies led to a 3.8% decrease in enrollment behaviors. We investigate three potential mechanisms: (i) exposure to the pandemic, (ii) labor market opportunities, and (iii) university quality. However, we find little evidence to support that these factors are significantly associated with changes in enrollment behaviors. These findings contribute to our understanding of the disruptive consequences of the COVID-19 pandemic on students’ educational trajectories and highlight its lasting impact on enrollment behaviors.
+    :::
+    ::::
+
+4.  **Altruism, Cooperativeness and Academic Achievement: A Lab in the Field Experiment in French Middle Schools**\
+    Dagorn, E., Masclet, D., & Penard, T. (2025).\
+    *Education Economics*, 1-28.
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="/files/papers/Dagorn_educ_econ_2025.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      <a class="pub-btn repo" href="https://osf.io/q9vax/" target="_blank" rel="noopener">
+      <i class="bi bi-git"></i> Replication
+      </a>
+      <a class="pub-btn supp" href="https://doi.org/10.1080/09645292.2025.2450424" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> DOI / Archive
+      </a>
+  </div>
+  
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    In this exploratory study, we investigate how altruism and cooperativeness are related to educational achievement. We run a lab in the field experiment with pupils from Middle Schools in Brittany, France, to study whether altruism and cooperativeness are correlated with educational success. Contrary to expectation, we find no significant relationship between cooperativeness and educational performance. In contrast, altruism is negatively related to academic achievement, but this relationship is gender-driven, as it is only significant for boys.
+    :::
+    ::::
+
+5.  **The limits of behavioral nudges to increase youth turnout: Experimental evidence from two French elections**\
+    Romaniuc, R. *et al.* (2025).\
+    *Journal of Economic Behavior & Organization*, 236, 107098.
+
+  
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="/files/papers/Rustam_Vote_2025.pdf" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2025.107098" target="_blank" rel="noopener">
+      <i class="bi bi-link-45deg"></i> DOI / Archive
+      </a>
+  </div>
+  
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    There is a significant gap in turnout between young people and older voters. The failure to instill a voting habit at an early age may have long term consequences in terms of future political participation as well as on other civic behaviors. Using a pre-registered online experiment with 3790 subjects, we implemented behavioral interventions aiming to stimulate youth turnout in the 2022 French presidential election. We rely on an innovative incentive scheme to measure their consequences on (self-reported) actual voting behavior. We also provide evidence on the effect of one behavioral intervention on youth turnout in a less salient election, the French legislative election that took place two months after the Presidential one. The results from the two experiments show the absence of any differences in turnout between the baseline and the treatment conditions. We investigate several mechanisms that can explain our results.
+    :::
+    ::::
+
+6.  **Shifting preferences: COVID-19 and higher education application**\
+    Dagorn, E., Meroni, E. C., & Moulin, L. (2025).\
+    *Applied Economics*, 1-16.
+
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    This study provides descriptive evidence on how the COVID-19 pandemic influenced secondary school students’ application patterns to higher education in France, offering insights into the reallocation of preferences across academic fields and degree types. Using detailed administrative data, we document significant shifts in application shares during 2021, with increased interest in competitive tracks and concurrent declines in applications to bachelor’s and vocational programs. These findings suggest that students responded to the pandemic by favouring structured and selective pathways with clear labour market prospects, moving away from generalist degrees. Students’ share of applications to STEM degrees increased, while applications to health and business programs remained stable. We then analyse the probability of applying to at least one program in a given field or degree and find a decline in application diversification: students narrowed their choices to fewer fields, reflecting a more risk-averse and selective approach in response to the pandemic. Our analysis highlights substantial heterogeneity in these effects across demographic groups.
+    :::
+    ::::
+
+    ------------------------------------------------------------------------
+
+## Working Papers {#working-papers}
+
+1.  *Social Pressure and Pro-social Behaviors Among Teenagers*\
+    [R&R]{.badge .bg-warning .text-dark} *Applied Economics*
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="https://osf.io/preprints/psyarxiv/r4wc5_v2f" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+    </div>
+  
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    This study investigates the influence of social pressure on prosocial behaviors among adolescents through a lab-in-the-field experiment. Using a controlled environment where teenagers interact with their classmates, I examine the evolution of cooperation over repeated interactions and explore its determinants. I find that girls and altruistic pupils demonstrate higher levels of cooperation. The introduction of non-monetary rewards and punishments, serving as forms of social pressure, significantly enhances cooperation among adolescents, aligning their behavior with group’s cooperation. Surprisingly, the study finds that the intensity of social pressure does not directly impact cooperation, suggesting that adolescents adapt their pro-social behavior in response to social pressure awareness. This study demonstrates that peer-enforced norms sustain cooperation among adolescents, even in the absence of material incentives.
+    :::
+    ::::
+
+2.  *Beyond Wealth and Governance in Terrestrial Protected Area Coverage: The Role of Population Behavioural Traits*\
+    with Cathleen Petit (FRB) & Valentin Journe (Adam Mickiewicz University).\
+    [Submitted]{.badge .bg-secondary}
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="https://osf.io/preprints/psyarxiv/eg78h_v2" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      <a class="pub-btn repo" href="https://github.com/ValentinJourne/EconomyEcologyPA" target="_blank" rel="noopener">
+      <i class="bi bi-git"></i> Replication
+      </a>
+    </div>
+  
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    Biodiversity loss demands urgent action, and protected areas are one of the cornerstones of biodiversity conservation measures. While conservation efforts are known to be driven by economic and political factors, there is an absence of literature addressing the potential role played by behavioural traits at the population level. We investigate how population-level behavioural traits influence the proportion of terrestrial protected areas by using large-scale cross-cultural surveys and geospatial data from 71 countries. We show that behavioural traits explain more variation in protected area coverage than economic indicators alone. Furthermore, trust is negatively associated with protected area coverage at the country level, suggesting that high-trust societies rely more on informal conservation practices. These findings challenge conventional models focused on economic and governance drivers and highlight the need for policies that align with population behaviours. Integrating behavioural insights into conservation planning could unlock more effective biodiversity conservation strategies in the era of environmental changes.
+    :::
+    ::::
+
+3.  *Determinants of Gender Discrimination by Teachers: Evidence from an online experiment*\
+    with Marion Monnet (Burgundy) & Philippe Colo (Bern).\
+    [Submitted]{.badge .bg-secondary}
+
+    <div class="pub-actions">
+      <a class="pub-btn pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5254180" target="_blank" rel="noopener">
+      <i class="bi bi-file-earmark-pdf"></i> PDF
+      </a>
+      </div>
+      
+    :::: {.callout-note collapse="true"}
+    ### Abstract
+
+    ::: justify
+    This paper examines whether teachers' gender biases stem from discrimination, and focuses on two of its potential drivers: gender preferences and beliefs. In an online experiment, 1,840 teachers evaluated fictitious transcripts with randomized gender information. Preferences were measured via dictator games, and beliefs through an Implicit Association Test. While teachers showed no gender preferences, they did hold gender beliefs. Analyzing 19,000 transcript evaluations, we find no evidence of gender-based discrimination. Our findings suggest that simply disclosing a student's gender does not trigger discrimination, implying that such behaviours are more likely to emerge during direct student-teacher interactions.
+    :::
+    ::::
+
+4.  *Les expériences sur les préférences individuelles et sociales des enfants et des adolescents: une revue de la littérature*\
+    with David Masclet (Rennes 1) & Thierry Penard (Rennes 1).\
+    [Submitted]{.badge .bg-secondary}
+
+------------------------------------------------------------------------
+
+## Work in Progress {#work-in-progress}
+
+1.  *The Marking Lottery in Secondary Education: Assessment and Solutions*\
+    with Philippe Colo (ETH), Alberto Prati (UCL) & Marion Monnet (IREDU).\
+    [Stage: Writing]{.badge .bg-light .text-dark}
+
+2.  *The Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals*\
+    with Clémence Dedinger (UPC-INRAE).\
+    [Stage: Data collection]{.badge .bg-light .text-dark}
+
+3.  *Knowledge is in the Air: Air Pollution and Early Educational Development*\
+    with Valentin Tissot.\
+    [Stage: Empirical Analysis]{.badge .bg-light .text-dark}

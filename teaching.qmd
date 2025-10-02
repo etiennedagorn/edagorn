@@ -14,7 +14,7 @@ Below are my current and previous courses. Syllabi, slides, and assignments will
 
     -   Weekly labs; final mini-project aligned with UN SDGs.
     -   Topics: data types, control flow, functions, files, basic data analysis, plotting.
-    -   **Materials:** [Class 1](./media/py_seance_1.pdf){target="_blank"} [Class 2](./media/py_seance_2.pdf){target="_blank"}
+    -   **Materials:** [Class 1](./media/cours/25_26/python/py_seance_1.pdf){target="_blank"} ; [Class 2](./media/cours/25_26/python/py_seance_2.pdf){target="_blank"} ; [TP 1](./media/cours/25_26/python/TP_1.pdf){target="_blank"} ; [TP 1 - Correction](./media/cours/25_26/python/TP_1_corr.py){target="_blank"}
 
 -   
 
@@ -27,9 +27,10 @@ Below are my current and previous courses. Syllabi, slides, and assignments will
 -   
 
     ### Scientific Writing & Public Speaking *(Undergraduate)*
-
     -   Structure of papers, clarity, figures/tables, presentations, audience design.
-    -   **Materials:** [Syllabus](./media/info_CfM.pdf){target="_blank"}
+    -   **Materials:** *(To be added)* [Class 1](./media/cours/25_26/cfm/Seance_1.pdf){target="_blank"} 
+
+
 
 -   
 
@@ -82,17 +83,24 @@ Below are my current and previous courses. Syllabi, slides, and assignments will
 
 ------------------------------------------------------------------------
 
-## Resources
+## Ressources
+
+[Template Latex](./media/cours/ressources/templates.zip){target="_blank"}
 
 ### In French
 
--   [Conseils de rédaction CV](./media/conseil_cv.pdf){target="_blank"}
+-   [Conseils de rédaction CV](./media/cours/ressources/conseil_cv.pdf){target="_blank"}
 
--   [Conseils de rédaction lettre de motivation](./media/conseil_LM.pdf){target="_blank"}
+-   [Conseils de rédaction lettre de motivation](./media/cours/ressources/conseil_LM.pdf){target="_blank"}
 
--   [Travailler avec des co-auteurs](./media/Co_authorship.pdf){target="_blank"}
+-   [Travailler avec des co-auteurs](./media/cours/ressources/Co_authorship.pdf){target="_blank"}
+
+-   [Travailler avec des co-auteurs](./media/cours/ressources/Co_authorship.pdf){target="_blank"}
+
+-   [Suivre l'actualité Scientifique](./media/cours/ressources/veille_académique.pdf){target="_blank"}
+
 
 ### In English
 
--   [How To Write An Economics Paper?](./media/paperwriting.pdf){target="_blank"}
--   Writing Tips For Economics Research Papers [1](./media/methodo_econo_dagorn_2020){target="_blank"} & [2](/media/Methodo_article.pdf)
+-   [How To Write An Economics Paper?](./media/cours/ressources/paperwriting.pdf){target="_blank"}
+-   Writing Tips For Economics Research Papers [1](./media/cours/ressources/methodo_econo_dagorn_2020.pdf){target="_blank"} & [2](./media/cours/ressources/Methodo_article.pdf){target="_blank"}

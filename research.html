@@ -72,22 +72,56 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
-  /* Barre d’actions sous chaque publication */
+  /* Conteneur publication */
+  .pub { margin: .75rem 0 1.25rem; }
+  .pub h3 { margin: 0 0 .2rem 0; font-size: 1.05rem; }
+  .pub-meta { color:#6b7280; font-size:.9rem; }
+  .kw { display:inline-block; margin:.15rem .25rem .15rem 0; font-size:.75rem; }
+  /* Barre d’actions */
   .pub-actions{
-    display:flex; gap:.5rem; flex-wrap:wrap; margin:.4rem 0 0.6rem 0;
+    display:flex; gap:.5rem; flex-wrap:wrap; margin:.45rem 0 .6rem 0;
   }
   .pub-btn{
     display:inline-flex; align-items:center; gap:.4rem;
-    padding:.25rem .55rem; border-radius:999px;
+    padding:.28rem .6rem; border-radius:999px;
     border:1px solid #e5e7eb; background:#fff; text-decoration:none;
     font-size:.85rem; line-height:1.2;
   }
   .pub-btn:hover{ background:#f8fafc; border-color:#d1d5db; }
-  .pub-btn.pdf      { border-color:#fecaca; background:#fff5f5; }
-  .pub-btn.repo     { border-color:#c7d2fe; background:#eef2ff; }
-  .pub-btn.supp     { border-color:#bbf7d0; background:#f0fdf4; }
+  .pub-btn.pdf  { border-color:#fecaca; background:#fff5f5; }
+  .pub-btn.repo { border-color:#c7d2fe; background:#eef2ff; }
+  .pub-btn.supp { border-color:#bbf7d0; background:#f0fdf4; }
   .pub-btn .bi{ font-size:1rem; }
+  /* Liste numérotée plus aérée quand HTML imbriqué */
+  ol > li { margin-bottom: 1.1rem; }
+  /* Filtres (optionnels) */
+  .filters { display:flex; flex-wrap:wrap; gap:.5rem; margin:.6rem 0 1rem; }
+  .filters .chip{
+    border:1px solid #e5e7eb; border-radius:999px; padding:.2rem .55rem;
+    cursor:pointer; user-select:none; font-size:.85rem; background:#fff;
+  }
+  .filters .chip.active{ background:#111827; color:#fff; border-color:#111827; }
+  .muted { color:#6b7280; font-size:.9rem; }
 </style>
+<script>
+  // Filtre simple par data-year / data-tags (optionnel)
+  document.addEventListener('DOMContentLoaded', () => {
+    const chips = document.querySelectorAll('[data-filter]');
+    chips.forEach(ch => ch.addEventListener('click', () => {
+      const val = ch.getAttribute('data-filter');
+      const scope = ch.closest('.filters');
+      scope.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      ch.classList.add('active');
+      const items = document.querySelectorAll('[data-pub]');
+      items.forEach(it => {
+        if (val === 'all') { it.style.display = ''; return; }
+        const year = it.getAttribute('data-year');
+        const tags = (it.getAttribute('data-tags')||'').toLowerCase();
+        it.style.display = (year===val || tags.includes(val)) ? '' : 'none';
+      });
+    }));
+  });
+</script>
 
 
 <link rel="stylesheet" href="custom.css">
@@ -149,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#key-words" id="toc-key-words" class="nav-link active" data-scroll-target="#key-words">Key Words</a></li>
+  <ul class="collapse">
+  <li><a href="#keywords" id="toc-keywords" class="nav-link active" data-scroll-target="#keywords">Keywords</a></li>
   <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
   <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working Papers</a></li>
   <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link" data-scroll-target="#work-in-progress">Work in Progress</a></li>
@@ -180,17 +214,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p><a href="#publications">Publications</a> · <a href="#working-papers">Working Papers</a> · <a href="#work-in-progress">Work in Progress</a></p>
-<section id="key-words" class="level2">
-<h2 class="anchored" data-anchor-id="key-words">Key Words</h2>
-<p>Pro social behaviors - Education- Policy making - External validity</p>
+<section id="keywords" class="level2">
+<h2 class="anchored" data-anchor-id="keywords">Keywords</h2>
+<p><span class="badge bg-light text-dark kw">Prosocial behavior</span> <span class="badge bg-light text-dark kw">Education</span> <span class="badge bg-light text-dark kw">Policy</span> <span class="badge bg-light text-dark kw">External validity</span></p>
+<hr>
 </section>
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div class="filters">
+<p><span class="muted">Filter:</span> <span class="chip active" data-filter="all">All</span> <span class="chip" data-filter="2025">2025</span> <span class="chip" data-filter="2024">2024</span> <span class="chip" data-filter="education">education</span> <span class="chip" data-filter="experiment">experiment</span> <span class="chip" data-filter="covid">covid</span></p>
+</div>
 <ol type="1">
-<li><p><strong>Reproducibility in Management Science</strong><br>
-Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., &amp; <em>Management Science Reproducibility Collaboration</em> (2024).<br>
-<em>Management Science</em>, 70(3), 1343-1356.<br>
-<span class="badge bg-info">Collaboration</span> Member of the MS Reproducibility Collaboration.</p>
+<li><div class="pub" data-pub="" data-year="2024" data-tags="reproducibility,meta-science">
+<h3 class="anchored">
+<strong>Reproducibility in Management Science</strong>
+</h3>
+<div class="pub-meta">
+<p>Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., &amp; <em>Management Science Reproducibility Collaboration</em> (2024).<br> <em>Management Science</em>, 70(3), 1343–1356. <span class="badge bg-info text-dark">Collaboration</span> Member of the MS Reproducibility Collaboration.</p>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -203,7 +244,6 @@ Abstract
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<div class="justify">
 <p>With the help of more than 700 reviewers, we assess the reproducibility of nearly 500 articles published in the journal Management Science before and after the introduction of a new Data and Code Disclosure policy in 2019. When considering only articles for which data accessibility and hardware and software requirements were not an obstacle for reviewers, the results of more than 95% of articles under the new disclosure policy could be fully or largely computationally reproduced. However, for 29% of articles, at least part of the data set was not accessible to the reviewer. Considering all articles in our sample reduces the share of reproduced articles to 68%. These figures represent a significant increase compared with the period before the introduction of the disclosure policy, where only 12% of articles voluntarily provided replication materials, of which 55% could be (largely) reproduced. Substantial heterogeneity in reproducibility rates across different fields is mainly driven by differences in data set accessibility. Other reasons for unsuccessful reproduction attempts include missing code, unresolvable code errors, weak or missing documentation, and software and hardware requirements and code complexity. Our findings highlight the importance of journal code and data disclosure policies and suggest potential avenues for enhancing their effectiveness.</p>
 </div>
 </div>
@@ -285,7 +325,7 @@ Abstract
 Romaniuc, R. <em>et al.</em> (2025).<br>
 <em>Journal of Economic Behavior &amp; Organization</em>, 236, 107098.</p>
 <div class="pub-actions">
-<a class="pub-btn pdf" href="./files/papers/Rustam_Vote_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a><a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2025.107098" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
+<a class="pub-btn pdf" href="./files/papers/Rustam_Vote_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2025.107098" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> DOI / Archive </a>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">

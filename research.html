@@ -94,34 +94,7 @@ ul.task-list li input[type="checkbox"] {
   .pub-btn .bi{ font-size:1rem; }
   /* Liste numérotée plus aérée quand HTML imbriqué */
   ol > li { margin-bottom: 1.1rem; }
-  /* Filtres (optionnels) */
-  .filters { display:flex; flex-wrap:wrap; gap:.5rem; margin:.6rem 0 1rem; }
-  .filters .chip{
-    border:1px solid #e5e7eb; border-radius:999px; padding:.2rem .55rem;
-    cursor:pointer; user-select:none; font-size:.85rem; background:#fff;
-  }
-  .filters .chip.active{ background:#111827; color:#fff; border-color:#111827; }
-  .muted { color:#6b7280; font-size:.9rem; }
 </style>
-<script>
-  // Filtre simple par data-year / data-tags (optionnel)
-  document.addEventListener('DOMContentLoaded', () => {
-    const chips = document.querySelectorAll('[data-filter]');
-    chips.forEach(ch => ch.addEventListener('click', () => {
-      const val = ch.getAttribute('data-filter');
-      const scope = ch.closest('.filters');
-      scope.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-      ch.classList.add('active');
-      const items = document.querySelectorAll('[data-pub]');
-      items.forEach(it => {
-        if (val === 'all') { it.style.display = ''; return; }
-        const year = it.getAttribute('data-year');
-        const tags = (it.getAttribute('data-tags')||'').toLowerCase();
-        it.style.display = (year===val || tags.includes(val)) ? '' : 'none';
-      });
-    }));
-  });
-</script>
 
 
 <link rel="stylesheet" href="custom.css">

@@ -1,10 +1,66 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "media/cours/25_26/duration/Template_TP.html",
+    "href": "media/cours/25_26/duration/Template_TP.html",
+    "title": "TP – Modèles de durée sous R",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Exercice 1 – Exploration des données et construction de Surv()\nObjectif : comprendre la structure des données et coder correctement la durée et la censure.\n\n# 1. Aperçu général du data.frame\n#    - Utilisez par exemple : head(df), str(df), summary(df)\n#    - L'objectif est d'identifier les variables disponibles.\n# (À vous de compléter ci-dessous)\n\n# 2. Identifier la variable de durée\n#    - Cherchez la variable qui mesure le temps de suivi (en jours).\n#    - Notez son nom en commentaire.\n\n# 3. Identifier la variable d'événement (décès)\n#    - Regardez la variable 'status' et sa documentation (?pbc)\n#    - Quels codes correspondent à : censure, greffe, décès ?\n#    - Notez vos réponses en commentaire.\n\n# 4. Calculer la proportion de censures\n#    - Construisez un indicateur logique (TRUE/FALSE) pour la censure.\n#    - Utilisez mean(indic_censure) pour obtenir la proportion.\n\n# 5. Créer l'objet de survie S avec Surv()\n#    - Utilisez Surv(time = ..., event = ...)\n#    - Attention : pour l'événement, il faut un 0/1 ou TRUE/FALSE.\n#    - Vérifiez l'affichage de S pour bien repérer les '+' (censure).\n\n# Espace de code pour vos réponses :\n\n\n\n\nExercice 2 – Kaplan–Meier et calculs « à la main »\nObjectif : construire une table (t_i, d_i, n_i), en déduire hazard et survie, et comparer à survfit().\n\n# 1. Créer un sous-échantillon de taille 200\n#    - Utilisez set.seed(123) pour la reproductibilité.\n#    - Utilisez sample_n(df, 200) avec {dplyr}.\n#    - Créez une nouvelle variable event = 1 si décès, 0 sinon (status == 2).\n\n# 2. Construire la table des événements\n#    - Ne garder que les lignes avec event == 1.\n#    - Compter, pour chaque temps, le nombre de décès d_i (fonction count()).\n#    - Stocker le résultat dans un data.frame, par ex. `events`.\n\n# 3. Calculer n_i (nombre à risque juste avant t_i)\n#    Idée :\n#    - n = nombre total d'individus dans votre sous-échantillon.\n#    - À chaque temps t_i, on retire les décès précédents.\n#    - Utilisez cumsum(d_i) pour le cumul des décès.\n#    - Construisez n_i = n - cumul_décès_précédents (en décalant avec lag()).\n\n# 4. Calculer le hazard discret h_i et la survie S_i\n#    - h_i = d_i / n_i\n#    - S_i = produit cumulé de (1 - h_i) (fonction cumprod()).\n\n# 5. Comparer à la KM de survfit()\n#    - Construisez S_sub &lt;- Surv(time, event) sur votre sous-échantillon.\n#    - Utilisez survfit(S_sub ~ 1) pour obtenir la KM.\n#    - Tracez vos courbes (S_i) avec ggplot2 et comparez visuellement.\n\n# Espace de code pour vos réponses :\n\n\n\n\nExercice 3 – Hazard cumulé de Nelson–Aalen\nObjectif : calculer le hazard cumulé H(t) et la survie approchée exp(–H(t)) à partir de votre table.\n\n# À partir de la table construite à l'exercice 2 (contenant t_i, d_i, n_i) :\n\n# 1. Calculer H_i = somme cumulée de d_i / n_i\n#    - Vous pouvez utiliser cumsum(d_i / n_i).\n#    - Ajoutez H_i comme nouvelle colonne.\n\n# 2. Calculer S_na = exp(-H_i)\n#    - Ajoutez S_na comme nouvelle colonne.\n\n# 3. Tracer :\n#    - H_i en fonction de t_i (geom_step()).\n#    - S_i (de l'exercice 2) et S_na sur le même graphique\n#      pour comparer les deux survies.\n\n# 4. Observer :\n#    - La forme (convexe/concave/linéaire) de H(t).\n#    - Les écarts entre S_i et S_na en début / milieu / fin de période.\n\n# Espace de code pour vos réponses :\n\n\n\n\nExercice 4 – Courbes KM par groupe et test du log-rank\nObjectif : comparer la survie entre groupes (ici : sexe) et utiliser le test du log-rank.\n\n# 1. Créer l'objet de survie global S si ce n'est pas déjà fait\n#    - S &lt;- Surv(time = df$time, event = df$status == 2)\n\n# 2. Estimer les courbes KM par sexe\n#    - Utilisez survfit(S ~ sex, data = df).\n#    - Tracez les courbes avec ggsurvplot().\n#    - Ajoutez éventuellement un tableau de risqué (risk.table = TRUE).\n\n# 3. Test du log-rank\n#    - Utilisez survdiff(S ~ sex, data = df).\n#    - Récupérez la statistique de test (test$chisq).\n#    - Calculez le p-value avec pchisq() (ou laissez R l'afficher si vous savez faire).\n\n# 4. Interprétation (en commentaire)\n#    - Les courbes sont-elles clairement séparées ?\n#    - Le p-value est-il petit ou grand ?\n#    - Que concluez-vous sur la différence de survie entre sexes ?\n\n# Espace de code pour vos réponses :\n\n\n\n\nExercice 5 – Modèles paramétriques (exponentiel et Weibull)\nObjectif : estimer des modèles exponentiel et Weibull, puis comparer leur ajustement.\n\n# 1. Modèle exponentiel sans covariables\n#    - Utilisez survreg(S ~ 1, data = df, dist = \"exponential\").\n#    - Inspectez la sortie du modèle (summary()).\n\n# 2. Récupérer le paramètre lambda\n#    - Regardez comment survreg paramètre le modèle exponentiel.\n#    - Construisez lambda_hat à partir de l'objet renvoyé.\n\n# 3. Modèle Weibull sans covariables\n#    - Utilisez survreg(S ~ 1, data = df, dist = \"weibull\").\n#    - Récupérez les paramètres de forme et d'échelle.\n\n# 4. Comparer exponentiel vs Weibull\n#    - Comparez AIC(m_exp, m_weib) et BIC(m_exp, m_weib).\n#    - Si vous voulez, superposez la survie théorique (via stat_function()) à la KM.\n\n# 5. Médianes théoriques\n#    - Pour chaque modèle, calculez la médiane théorique de la durée.\n#    - Comparez-les à la médiane de la KM.\n\n# Espace de code pour vos réponses :\n\n\n\n\nExercice 6 – Modèles de Cox (PH) et AFT (Weibull)\nObjectif : introduire des covariables et comparer les approches PH et AFT.\n\n# 1. Modèle de Cox\n#    - Estimez coxph(S ~ age + sex + bili, data = df).\n#    - Affichez le résumé et interprétez les signes des coefficients (en commentaire).\n#    - Calculez les hazard ratios avec exp(coef()).\n\n# 2. Vérification de l'hypothèse de risques proportionnels\n#    - Utilisez cox.zph() sur votre modèle coxph.\n#    - Notez les p-values et regardez si certaines covariables semblent violer PH.\n\n# 3. Modèle AFT Weibull\n#    - Estimez survreg(S ~ age + sex + bili, data = df, dist = \"weibull\").\n#    - Calculez les time ratios avec exp(coef()).\n#    - Interprétez en 1–2 phrases l'effet d'au moins une covariable (en commentaire).\n\n# 4. Comparaison des modèles\n#    - Comparez AIC(cox_model) et AIC(aft_model).\n#    - Discutez (en commentaire) des avantages / limites de chaque approche\n#      en termes d'interprétation (hazard vs durée).\n\n# Espace de code pour vos réponses :"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Etienne Dagorn",
+    "section": "",
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+  },
+  {
+    "objectID": "index.html#assistant-professor-university-of-lille-lem",
+    "href": "index.html#assistant-professor-university-of-lille-lem",
+    "title": "Etienne Dagorn",
+    "section": "",
+    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Below are my current and previous courses. Syllabi, slides, and assignments will be posted here."
+  },
+  {
+    "objectID": "teaching.html#current-courses",
+    "href": "teaching.html#current-courses",
+    "title": "Teaching",
+    "section": "Current courses",
+    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: Class 1 ; Class 2 ;\nTP:TP 1 ; TP 2 ; TP 3 ; TP 4 [Data TP4 ] ; TP 5 [Data TP5 ]\nCorrections: TP 1 - Correction ; TP 2 - Correction ; TP 3 - Correction ; TP 4 - Correction ; TP 5 - Correction ;\nExams:\n[Sujet 1 ]; [Sujet 2 ];\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R with applied examples.\nMaterials: [1] ; [2] ; [3]; [3 - Techinal Appendix] ; [4-Poly] [4-Template-RMD]\nExam: [Sujet]\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: Class 1 ; Class 2 ; ; Class 3 ; Class 4 ; Class 5 ; Articles\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
+  },
+  {
+    "objectID": "teaching.html#quick-overview",
+    "href": "teaching.html#quick-overview",
+    "title": "Teaching",
+    "section": "Quick overview",
+    "text": "Quick overview\n\n\n\n\n\n\n\n\nLevel\nCourse\nFormat\n\n\n\n\nUG\nIntroduction to Python\nWeekly labs + project\n\n\nG\nDuration Models\nLectures + applied sessions\n\n\nUG\nScientific Writing & Public Speaking\nWorkshops + presentations\n\n\nUG\nPublic Economics\nLectures + problem sets\n\n\nUG\nIntroduction to Macroeconomics\nLectures + quizzes"
+  },
+  {
+    "objectID": "teaching.html#previous-courses",
+    "href": "teaching.html#previous-courses",
+    "title": "Teaching",
+    "section": "Previous courses",
+    "text": "Previous courses\n\nComplete list on my resume"
+  },
+  {
+    "objectID": "teaching.html#logistics",
+    "href": "teaching.html#logistics",
+    "title": "Teaching",
+    "section": "Logistics",
+    "text": "Logistics\n\n\n\n\n\n\nNote\n\n\n\nOffice hours: by appointment\nEmail: etienne.dagorn@univ-lille.fr\nLocation: Lille University — LEM\n\n\nPolicies (short version):\n\nAcademic integrity: independent work unless collaboration is explicitly allowed.\nLate work: 1 point per minute late.\nAccessibility: I’m happy to arrange accommodations—please reach out early."
+  },
+  {
+    "objectID": "teaching.html#ressources",
+    "href": "teaching.html#ressources",
+    "title": "Teaching",
+    "section": "Ressources",
+    "text": "Ressources\nTemplate Latex\n\nIn French\n\nConseils de rédaction CV\nConseils de rédaction lettre de motivation\nTravailler avec des co-auteurs\nTravailler avec des co-auteurs\nSuivre l’actualité Scientifique\n\n\n\nIn English\n\nHow To Write An Economics Paper?\nWriting Tips For Economics Research Papers 1 & 2"
   },
   {
     "objectID": "research.html",
@@ -42,59 +98,10 @@
     "text": "Work in Progress\n\nThe Marking Lottery in Secondary Education: Assessment and Solutions\nwith Philippe Colo (ETH), Alberto Prati (UCL) & Marion Monnet (IREDU).\nStage: Writing\nThe Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals\nwith Clémence Dedinger (UPC-INRAE).\nStage: Data collection\nKnowledge is in the Air: Air Pollution and Early Educational Development\nwith Valentin Tissot.\nStage: Empirical Analysis"
   },
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Below are my current and previous courses. Syllabi, slides, and assignments will be posted here."
-  },
-  {
-    "objectID": "teaching.html#current-courses",
-    "href": "teaching.html#current-courses",
-    "title": "Teaching",
-    "section": "Current courses",
-    "text": "Current courses\n\n\nIntroduction to Python (Undergraduate)\n\nWeekly labs; final mini-project aligned with UN SDGs.\nTopics: data types, control flow, functions, files, basic data analysis, plotting.\nMaterials: Class 1 ; Class 2 ;\nTP:TP 1 ; TP 2 ; TP 3 ; TP 4 [Data TP4 ] ; TP 5 [Data TP5 ]\nCorrections: TP 1 - Correction ; TP 2 - Correction ; TP 3 - Correction ; TP 4 - Correction ; TP 5 - Correction ;\nExams:\n[Sujet 1 ]; [Sujet 2 ];\n\nDuration Models (Graduate)\n\nSurvival analysis: Kaplan–Meier, Cox, AFT, parametric & semi-parametric models.\nHands-on in R with applied examples.\nMaterials: [1] [2] [3][Techinal Appendix]\n\nScientific Writing & Public Speaking (Undergraduate)\n\nStructure of papers, clarity, figures/tables, presentations, audience design.\nMaterials: Class 1 ; Class 2 ; ; Class 3 ; Class 4 ; Class 5 ; Articles\n\nPublic Economics (Undergraduate)\n\nEfficiency & equity, taxation, public goods, externalities, social insurance.\nMaterials: (PDF to be added)\n\nIntroduction to Macroeconomics (Undergraduate)\n\nOutput, inflation, unemployment; simple models; policy debates.\nMaterials: (PDF to be added)"
-  },
-  {
-    "objectID": "teaching.html#quick-overview",
-    "href": "teaching.html#quick-overview",
-    "title": "Teaching",
-    "section": "Quick overview",
-    "text": "Quick overview\n\n\n\n\n\n\n\n\nLevel\nCourse\nFormat\n\n\n\n\nUG\nIntroduction to Python\nWeekly labs + project\n\n\nG\nDuration Models\nLectures + applied sessions\n\n\nUG\nScientific Writing & Public Speaking\nWorkshops + presentations\n\n\nUG\nPublic Economics\nLectures + problem sets\n\n\nUG\nIntroduction to Macroeconomics\nLectures + quizzes"
-  },
-  {
-    "objectID": "teaching.html#previous-courses",
-    "href": "teaching.html#previous-courses",
-    "title": "Teaching",
-    "section": "Previous courses",
-    "text": "Previous courses\n\nComplete list on my resume"
-  },
-  {
-    "objectID": "teaching.html#logistics",
-    "href": "teaching.html#logistics",
-    "title": "Teaching",
-    "section": "Logistics",
-    "text": "Logistics\n\n\n\n\n\n\nNote\n\n\n\nOffice hours: by appointment\nEmail: etienne.dagorn@univ-lille.fr\nLocation: Lille University — LEM\n\n\nPolicies (short version):\n\nAcademic integrity: independent work unless collaboration is explicitly allowed.\nLate work: 1 point per minute late.\nAccessibility: I’m happy to arrange accommodations—please reach out early."
-  },
-  {
-    "objectID": "teaching.html#ressources",
-    "href": "teaching.html#ressources",
-    "title": "Teaching",
-    "section": "Ressources",
-    "text": "Ressources\nTemplate Latex\n\nIn French\n\nConseils de rédaction CV\nConseils de rédaction lettre de motivation\nTravailler avec des co-auteurs\nTravailler avec des co-auteurs\nSuivre l’actualité Scientifique\n\n\n\nIn English\n\nHow To Write An Economics Paper?\nWriting Tips For Economics Research Papers 1 & 2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Etienne Dagorn",
-    "section": "",
-    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
-  },
-  {
-    "objectID": "index.html#assistant-professor-university-of-lille-lem",
-    "href": "index.html#assistant-professor-university-of-lille-lem",
-    "title": "Etienne Dagorn",
-    "section": "",
-    "text": "I’m an applied microeconomist working on education economics, political economy, and experimental economics (lab, field, and online).\nMy work examines how incentives, norms and information shape educational choices and public decisions.\n\nMethods: field/lab/online experiments; causal inference; admin data; reproducible workflows.\n\n\n\n\n2025-09 — Joined University of Lille as an Assistant Prof.\n\n2025-08 - Second paper from my postdoc published in Applied Economics"
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]

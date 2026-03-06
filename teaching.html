@@ -150,11 +150,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#current-courses" id="toc-current-courses" class="nav-link active" data-scroll-target="#current-courses">Current courses</a></li>
-  <li><a href="#quick-overview" id="toc-quick-overview" class="nav-link" data-scroll-target="#quick-overview">Quick overview</a></li>
-  <li><a href="#previous-courses" id="toc-previous-courses" class="nav-link" data-scroll-target="#previous-courses">Previous courses</a></li>
-  <li><a href="#logistics" id="toc-logistics" class="nav-link" data-scroll-target="#logistics">Logistics</a></li>
-  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a>
+  <li><a href="#graduate-courses" id="toc-graduate-courses" class="nav-link active" data-scroll-target="#graduate-courses">Graduate Courses</a>
+  <ul class="collapse">
+  <li><a href="#duration-models" id="toc-duration-models" class="nav-link" data-scroll-target="#duration-models">Duration Models</a></li>
+  </ul></li>
+  <li><a href="#undergaduate-courses" id="toc-undergaduate-courses" class="nav-link" data-scroll-target="#undergaduate-courses">Undergaduate Courses</a>
+  <ul class="collapse">
+  <li><a href="#introduction-to-python" id="toc-introduction-to-python" class="nav-link" data-scroll-target="#introduction-to-python">Introduction to Python</a></li>
+  <li><a href="#scientific-writing-public-speaking" id="toc-scientific-writing-public-speaking" class="nav-link" data-scroll-target="#scientific-writing-public-speaking">Scientific Writing &amp; Public Speaking</a></li>
+  <li><a href="#public-economics" id="toc-public-economics" class="nav-link" data-scroll-target="#public-economics">Public Economics</a></li>
+  <li><a href="#introduction-to-macroeconomics" id="toc-introduction-to-macroeconomics" class="nav-link" data-scroll-target="#introduction-to-macroeconomics">Introduction to Macroeconomics</a></li>
+  </ul></li>
+  <li><a href="#academic-resources" id="toc-academic-resources" class="nav-link" data-scroll-target="#academic-resources">Academic Resources</a>
   <ul class="collapse">
   <li><a href="#in-french" id="toc-in-french" class="nav-link" data-scroll-target="#in-french">In French</a></li>
   <li><a href="#in-english" id="toc-in-english" class="nav-link" data-scroll-target="#in-english">In English</a></li>
@@ -184,134 +191,221 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+body.page-teaching h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+body.page-teaching details {
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  border-left: 3px solid #d9d9d9;
+}
+
+body.page-teaching details[open] {
+  background-color: #f5f5f5;
+}
+
+body.page-teaching a {
+  text-decoration: none;
+}
+
+body.page-teaching a:hover {
+  text-decoration: underline;
+}
+body.page-teaching summary {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  display: block;
+}
+
+body.page-teaching details {
+  margin-bottom: 0.8rem;
+}
+
+body.page-teaching details ul {
+  margin-top: 0.4rem;
+  margin-left: 1rem;
+}
+
+</style>
 <p>Below are my current and previous courses. Syllabi, slides, and assignments will be posted here.</p>
-<section id="current-courses" class="level2">
-<h2 class="anchored" data-anchor-id="current-courses">Current courses</h2>
-<div class="cards">
+<section id="graduate-courses" class="level2">
+<h2 class="anchored" data-anchor-id="graduate-courses">Graduate Courses</h2>
+<section id="duration-models" class="level3">
+<h3 class="anchored" data-anchor-id="duration-models">Duration Models</h3>
+<details>
+<summary>
+<strong>Course description</strong>
+</summary>
+<p>Survival analysis: Kaplan–Meier, Cox, AFT, parametric &amp; semi-parametric models.<br>
+Hands-on in R with applied examples.</p>
+</details>
+<details>
+<summary>
+<strong>Materials</strong>
+</summary>
 <ul>
-<li><h3 id="introduction-to-python-undergraduate" class="anchored">Introduction to Python <em>(Undergraduate)</em></h3>
-<ul>
-<li>Weekly labs; final mini-project aligned with UN SDGs.</li>
-<li>Topics: data types, control flow, functions, files, basic data analysis, plotting.</li>
-<li><strong>Materials:</strong> <a href="./media/cours/25_26/python/py_seance_1.pdf" target="_blank">Class 1</a> ; <a href="./media/cours/25_26/python/py_seance_2.pdf" target="_blank">Class 2</a> ;</li>
-<li><strong>TP</strong>:<a href="./media/cours/25_26/python/TP_1.pdf" target="_blank">TP 1</a> ; <a href="./media/cours/25_26/python/TP_2.pdf" target="_blank">TP 2</a> ; <a href="./media/cours/25_26/python/TP_3.pdf" target="_blank">TP 3</a> ; <a href="./media/cours/25_26/python/TP_4.pdf" target="_blank">TP 4</a> [<a href="./media/cours/25_26/python/aviation_2024.csv" target="_blank">Data TP4</a> ] ; <a href="./media/cours/25_26/python/TP_5.pdf" target="_blank">TP 5</a> [<a href="./media/cours/25_26/python/top_1_france.csv" target="_blank">Data TP5</a> ]</li>
-<li><strong>Corrections</strong>: <a href="./media/cours/25_26/python/TP_1_corr.py" target="_blank">TP 1 - Correction</a> ; <a href="./media/cours/25_26/python/TP_2_corr_til_ex4.py" target="_blank">TP 2 - Correction</a> ; <a href="./media/cours/25_26/python/TP_3_corr.py" target="_blank">TP 3 - Correction</a> ; <a href="./media/cours/25_26/python/TP_4_corr.py" target="_blank">TP 4 - Correction</a> ; <a href="./media/cours/25_26/python/TP5_corr.py" target="_blank">TP 5 - Correction</a> ;</li>
-<li><strong>Exams</strong>:<br>
-[<a href="./media/cours/25_26/python/exam_sujet_1.pdf" target="_blank">Sujet 1</a> ]; [<a href="./media/cours/25_26/python/exam_sujet_2.pdf" target="_blank">Sujet 2</a> ];</li>
-</ul></li>
-<li><h3 id="duration-models-graduate" class="anchored">Duration Models <em>(Graduate)</em></h3>
-<ul>
-<li><p>Survival analysis: Kaplan–Meier, Cox, AFT, parametric &amp; semi-parametric models.</p></li>
-<li><p>Hands-on in R with applied examples.</p></li>
-<li><p><strong>Materials:</strong> [<a href="./media/cours/25_26/duration/MD_Seance_1_ED.pdf" target="_blank">1</a>] ; [<a href="./media/cours/25_26/duration/MD_Seance_2_ED.pdf" target="_blank">2</a>] ; [<a href="./media/cours/25_26/duration/MD_Seance_3_ED.pdf" target="_blank">3</a>]; [<a href="./media/cours/25_26/duration/MD_appendix.pdf" target="_blank">3 - Techinal Appendix</a>] ; [<a href="./media/cours/25_26/duration/TP_durees_poly.html" target="_blank">4-Poly</a>] [<a href="./media/cours/25_26/duration/Template_TP.html" download="Template_TP.Rmd">4-Template-RMD</a>]</p></li>
-<li><p><strong>Exam:</strong> [<a href="./media/cours/25_26/duration/MD_Evaluation_ED.pdf" target="_blank">Sujet</a>]</p></li>
-</ul></li>
-<li><h3 id="scientific-writing-public-speaking-undergraduate" class="anchored">Scientific Writing &amp; Public Speaking <em>(Undergraduate)</em></h3>
-<ul>
-<li>Structure of papers, clarity, figures/tables, presentations, audience design.</li>
-<li><strong>Materials:</strong> <a href="./media/cours/25_26/cfm/Seance_1.pdf" target="_blank">Class 1</a> ; <a href="./media/cours/25_26/cfm/Seance_2.pdf" target="_blank">Class 2</a> ; ; <a href="./media/cours/25_26/cfm/Seance_3.pdf" target="_blank">Class 3</a> ; <a href="./media/cours/25_26/cfm/Seance_4.pdf" target="_blank">Class 4</a> ; <a href="./media/cours/25_26/cfm/Seance_5.pdf" target="_blank">Class 5</a> ; <a href="./media/cours/25_26/cfm/Seance_7.pdf" target="_blank">Class 6</a> <a href="https://cloud.web.ined.fr/s/Zn7nEtNjFHf5wog" target="_blank">Articles</a></li>
-</ul></li>
-<li><h3 id="public-economics-undergraduate" class="anchored">Public Economics <em>(Undergraduate)</em></h3>
-<ul>
-<li>Efficiency &amp; equity, taxation, public goods, externalities, social insurance.</li>
-<li><strong>Materials:</strong> ; <a href="./media/cours/25_26/eco_pub/TD/TD_1.pdf" target="_blank">TD 1</a> ; <a href="./media/cours/25_26/eco_pub/TD/TD2_planche.pdf" target="_blank">TD 2</a></li>
-</ul></li>
-<li><h3 id="introduction-to-macroeconomics-undergraduate" class="anchored">Introduction to Macroeconomics <em>(Undergraduate)</em></h3>
-<ul>
-<li><p>Output, inflation, unemployment; simple models; policy debates.</p></li>
-<li><p><strong>Materials:</strong> <a href="./media/cours/25_26/macro/Macro_Seance_1_ED.pdf" target="_blank">CM 1</a> ; <a href="./media/cours/25_26/macro/Macro_Seance2_ED.pdf" target="_blank">CM 2</a> ; <a href="./media/cours/25_26/macro/Macro_Seance3_ED.pdf" target="_blank">CM 3</a> ; <a href="./media/cours/25_26/macro/Macro_Seance4_ED.pdf" target="_blank">CM 4</a> ;</p></li>
-<li><p><a href="./media/cours/25_26/macro/Intro_Macro_TD_1.pdf" target="_blank">TD 1</a> ; <a href="./media/cours/25_26/macro/Intro_Macro_TD_2.pdf" target="_blank">TD 2</a> ;</p></li>
-</ul></li>
+<li><a href="./media/cours/25_26/duration/MD_Seance_1_ED.pdf" target="_blank">Session 1</a></li>
+<li><a href="./media/cours/25_26/duration/MD_Seance_2_ED.pdf" target="_blank">Session 2</a></li>
+<li><a href="./media/cours/25_26/duration/MD_Seance_3_ED.pdf" target="_blank">Session 3</a></li>
+<li><a href="./media/cours/25_26/duration/MD_appendix.pdf" target="_blank">Technical Appendix</a></li>
+<li><a href="./media/cours/25_26/duration/TP_durees_poly.html" target="_blank">TP – Poly</a></li>
+<li><a href="./media/cours/25_26/duration/Template_TP.html" download="Template_TP.Rmd">TP – RMarkdown Template</a></li>
 </ul>
-</div>
-<hr>
-</section>
-<section id="quick-overview" class="level2">
-<h2 class="anchored" data-anchor-id="quick-overview">Quick overview</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 51%">
-<col style="width: 39%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Level</th>
-<th>Course</th>
-<th>Format</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>UG</td>
-<td>Introduction to Python</td>
-<td>Weekly labs + project</td>
-</tr>
-<tr class="even">
-<td>G</td>
-<td>Duration Models</td>
-<td>Lectures + applied sessions</td>
-</tr>
-<tr class="odd">
-<td>UG</td>
-<td>Scientific Writing &amp; Public Speaking</td>
-<td>Workshops + presentations</td>
-</tr>
-<tr class="even">
-<td>UG</td>
-<td>Public Economics</td>
-<td>Lectures + problem sets</td>
-</tr>
-<tr class="odd">
-<td>UG</td>
-<td>Introduction to Macroeconomics</td>
-<td>Lectures + quizzes</td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-<section id="previous-courses" class="level2">
-<h2 class="anchored" data-anchor-id="previous-courses">Previous courses</h2>
+</details>
+<details>
+<summary>
+<strong>Exam</strong>
+</summary>
 <ul>
-<li>Complete list on my <a href="./media/CV_DAGORN.pdf" target="_blank">resume</a></li>
-</ul>
-<hr>
+<li><p><a href="./media/cours/25_26/duration/MD_Evaluation_ED.pdf" target="_blank">Sujet</a></p>
+</li></ul></details>
+
 </section>
-<section id="logistics" class="level2">
-<h2 class="anchored" data-anchor-id="logistics">Logistics</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Office hours:</strong> by appointment<br>
-<strong>Email:</strong> etienne.dagorn@univ-lille.fr<br>
-<strong>Location:</strong> Lille University — LEM</p>
-</div>
-</div>
-<p><strong>Policies (short version):</strong></p>
+</section>
+<section id="undergaduate-courses" class="level2">
+<h2 class="anchored" data-anchor-id="undergaduate-courses">Undergaduate Courses</h2>
+<section id="introduction-to-python" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-to-python">Introduction to Python</h3>
+<details>
+<summary>
+<strong>Course description</strong>
+</summary>
+<p>Weekly labs; final mini-project aligned with UN SDGs.<br>
+Topics: data types, control flow, functions, files, basic data analysis, plotting.</p>
+</details>
+<details>
+<summary>
+<strong>Lectures</strong>
+</summary>
 <ul>
-<li>Academic integrity: independent work unless collaboration is explicitly allowed.</li>
-<li>Late work: 1 point per minute late.</li>
-<li>Accessibility: I’m happy to arrange accommodations—please reach out early.</li>
+<li><a href="./media/cours/25_26/python/py_seance_1.pdf" target="_blank">Class 1</a></li>
+<li><a href="./media/cours/25_26/python/py_seance_2.pdf" target="_blank">Class 2</a></li>
 </ul>
+</details>
+<details>
+<summary>
+<strong>Labs (TP)</strong>
+</summary>
+<ul>
+<li>TP 1 — <a href="./media/cours/25_26/python/TP_1.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_1_corr.py" target="_blank">Correction</a></li>
+<li>TP 2 — <a href="./media/cours/25_26/python/TP_2.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_2_corr_til_ex4.py" target="_blank">Correction</a></li>
+<li>TP 3 — <a href="./media/cours/25_26/python/TP_3.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_3_corr.py" target="_blank">Correction</a></li>
+<li>TP 4 — <a href="./media/cours/25_26/python/TP_4.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/aviation_2024.csv" target="_blank">Data</a> | <a href="./media/cours/25_26/python/TP_4_corr.py" target="_blank">Correction</a></li>
+<li>TP 5 — <a href="./media/cours/25_26/python/TP_5.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/top_1_france.csv" target="_blank">Data</a> | <a href="./media/cours/25_26/python/TP5_corr.py" target="_blank">Correction</a></li>
+</ul>
+</details>
+<details>
+<summary>
+<strong>Exams</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/python/exam_sujet_1.pdf" target="_blank">Sujet 1</a></li>
+<li><a href="./media/cours/25_26/python/exam_sujet_2.pdf" target="_blank">Sujet 2</a></li>
+</ul>
+</details>
 <hr>
 </section>
-<section id="ressources" class="level2">
-<h2 class="anchored" data-anchor-id="ressources">Ressources</h2>
+<section id="scientific-writing-public-speaking" class="level3">
+<h3 class="anchored" data-anchor-id="scientific-writing-public-speaking">Scientific Writing &amp; Public Speaking</h3>
+<details>
+<summary>
+<strong>Course description</strong>
+</summary>
+<p>Structure of papers, clarity, figures and tables, presentations, audience design.</p>
+</details>
+<details>
+<summary>
+<strong>Materials</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/cfm/Seance_1.pdf" target="_blank">Class 1</a></li>
+<li><a href="./media/cours/25_26/cfm/Seance_2.pdf" target="_blank">Class 2</a></li>
+<li><a href="./media/cours/25_26/cfm/Seance_3.pdf" target="_blank">Class 3</a></li>
+<li><a href="./media/cours/25_26/cfm/Seance_4.pdf" target="_blank">Class 4</a></li>
+<li><a href="./media/cours/25_26/cfm/Seance_5.pdf" target="_blank">Class 5</a></li>
+<li><a href="./media/cours/25_26/cfm/Seance_7.pdf" target="_blank">Class 6</a></li>
+<li><a href="https://cloud.web.ined.fr/s/Zn7nEtNjFHf5wog" target="_blank">Reading material</a></li>
+</ul>
+</details>
+<hr>
+</section>
+<section id="public-economics" class="level3">
+<h3 class="anchored" data-anchor-id="public-economics">Public Economics</h3>
+<details>
+<summary>
+<strong>Course description</strong>
+</summary>
+<p>Efficiency and equity, taxation, public goods, externalities, social insurance.</p>
+</details>
+<details>
+<summary>
+<strong>Lectures (CM)</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_1_ED.pdf" target="_blank">CM 1</a></li>
+<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_2_ED.pdf" target="_blank">CM 2</a></li>
+<li><a href="./media/cours/25_26/eco_pub/Pub_E_Seance_3_ED_V2.pdf" target="_blank">CM 3</a></li>
+<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_4_ED.pdf" target="_blank">CM 4</a></li>
+<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_5_ED.pdf" target="_blank">CM 5</a></li>
+</ul>
+</details>
+<details>
+<summary>
+<strong>Tutorials (TD)</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/eco_pub/TD/TD_1.pdf" target="_blank">TD 1</a></li>
+<li><a href="./media/cours/25_26/eco_pub/TD/TD2_planche.pdf" target="_blank">TD 2</a></li>
+<li><a href="./media/cours/25_26/eco_pub/TD/eco_pub_TD3.pdf" target="_blank">TD 3</a></li>
+</ul>
+</details>
+<hr>
+</section>
+<section id="introduction-to-macroeconomics" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-to-macroeconomics">Introduction to Macroeconomics</h3>
+<details>
+<summary>
+<strong>Course description</strong>
+</summary>
+<p>Output, inflation, unemployment; simple models; policy debates.</p>
+</details>
+<details>
+<summary>
+<strong>Lectures (CM)</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/macro/Macro_Seance_1_ED.pdf" target="_blank">CM 1</a></li>
+<li><a href="./media/cours/25_26/macro/Macro_Seance2_ED.pdf" target="_blank">CM 2</a></li>
+<li><a href="./media/cours/25_26/macro/Macro_Seance3_ED.pdf" target="_blank">CM 3</a></li>
+<li><a href="./media/cours/25_26/macro/Macro_Seance4_ED.pdf" target="_blank">CM 4</a></li>
+<li><a href="./media/cours/25_26/macro/Macro_Seance5_ED.pdf" target="_blank">CM 5</a></li>
+</ul>
+</details>
+<details>
+<summary>
+<strong>Tutorials (TD)</strong>
+</summary>
+<ul>
+<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_1.pdf" target="_blank">TD 1</a></li>
+<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_2.pdf" target="_blank">TD 2</a></li>
+</ul>
+</details>
+</section>
+</section>
+<section id="academic-resources" class="level2">
+<h2 class="anchored" data-anchor-id="academic-resources">Academic Resources</h2>
 <p><a href="./media/cours/ressources/templates.zip" target="_blank">Template Latex</a></p>
 <section id="in-french" class="level3">
 <h3 class="anchored" data-anchor-id="in-french">In French</h3>
 <ul>
 <li><p><a href="./media/cours/ressources/conseil_cv.pdf" target="_blank">Conseils de rédaction CV</a></p></li>
 <li><p><a href="./media/cours/ressources/conseil_LM.pdf" target="_blank">Conseils de rédaction lettre de motivation</a></p></li>
-<li><p><a href="./media/cours/ressources/Co_authorship.pdf" target="_blank">Travailler avec des co-auteurs</a></p></li>
 <li><p><a href="./media/cours/ressources/Co_authorship.pdf" target="_blank">Travailler avec des co-auteurs</a></p></li>
 <li><p><a href="./media/cours/ressources/veille_académique.pdf" target="_blank">Suivre l’actualité Scientifique</a></p></li>
 </ul>

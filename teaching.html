@@ -73,20 +73,212 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <style>
-  /* Réduire la largeur de la colonne gauche du layout 'trestles' */
-  .about-trestles {
-    display: grid !important;
-    grid-template-columns: 180px 1fr !important; /* ajuste au besoin */
-    align-items: start;
+body {
+  color: var(--site-ink, #25233a);
+}
+
+body main {
+  max-width: 1120px;
+}
+
+body .teaching-intro {
+  margin: 0.2rem 0 2rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-left: 4px solid var(--site-accent, #8b3d4a);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(37, 35, 58, 0.05);
+}
+
+body .teaching-intro p {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+body main h2 {
+  margin-top: 2.15rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--site-line, #e8e3dc);
+}
+
+body .course-grid,
+body .approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: 1rem 0 2.4rem;
+}
+
+body .course-card,
+body .approach-item {
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(37, 35, 58, 0.06);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+body .course-card:hover,
+body .course-card:focus-within,
+body .course-card.is-open {
+  border-color: var(--site-accent, #8b3d4a);
+  box-shadow: 0 14px 34px rgba(37, 35, 58, 0.12);
+}
+
+body .course-card:hover {
+  transform: translateY(-2px);
+}
+
+body .course-card h3,
+body .approach-item h3 {
+  margin: 0 0 0.55rem;
+  color: var(--site-ink, #25233a);
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+body .course-meta {
+  display: block;
+  margin: 0;
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--site-line, #e8e3dc);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--site-muted, #667085);
+}
+
+body .course-card p,
+body .approach-item p {
+  line-height: 1.6;
+}
+
+body .course-detail-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.2rem;
+  margin-top: 0.85rem;
+  padding: 0.36rem 0.72rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: var(--site-paper, #fbfaf7);
+  color: var(--site-accent, #8b3d4a);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body .course-detail-toggle::after {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 1;
+}
+
+body .course-card.is-open .course-detail-toggle {
+  border-color: var(--site-accent, #8b3d4a);
+  background: var(--site-accent, #8b3d4a);
+  color: #fff;
+}
+
+body .course-card.is-open .course-detail-toggle::after {
+  content: "-";
+  color: var(--site-accent, #8b3d4a);
+}
+
+body .course-detail-toggle:hover,
+body .course-detail-toggle:focus {
+  border-color: var(--site-accent, #8b3d4a);
+}
+
+body.course-js .course-card > p,
+body.course-js .course-card > details.course-outline {
+  display: none;
+}
+
+body.course-js .course-card.is-open > p,
+body.course-js .course-card.is-open > details.course-outline {
+  display: block;
+}
+
+body .topic-list {
+  margin: 0.25rem 0 0.75rem;
+  padding-left: 1.05rem;
+}
+
+body .topic-list li {
+  margin-bottom: 0.22rem;
+}
+
+body details.course-outline {
+  margin-top: 0.95rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--site-line, #e8e3dc);
+}
+
+body details.course-outline summary {
+  color: var(--site-accent, #8b3d4a);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+body .course-outline-content {
+  margin-top: 0.55rem;
+  font-size: 0.94rem;
+}
+
+body .materials-policy {
+  margin: 0.95rem 0 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: var(--site-paper, #fbfaf7);
+  color: var(--site-muted, #667085);
+  font-size: 0.92rem;
+}
+
+body .resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+body .resource-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--site-ink, #25233a);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+body .resource-btn:hover,
+body .resource-btn:focus {
+  border-color: var(--site-accent, #8b3d4a);
+  color: var(--site-accent, #8b3d4a);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  body .course-grid,
+  body .approach-grid {
+    grid-template-columns: 1fr;
   }
-  /* Limiter la taille de l'image */
-  .about-trestles .about-image img {
-    max-width: 140px;
-    height: auto;
-  }
-  /* Variante responsive (dé-commente si tu préfères auto-ajusté)
-  .about-trestles { grid-template-columns: min-content 1fr !important; }
-  */
+}
 </style>
 
 
@@ -161,22 +353,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#graduate-courses" id="toc-graduate-courses" class="nav-link active" data-scroll-target="#graduate-courses">Graduate Courses</a>
-  <ul class="collapse">
-  <li><a href="#duration-models" id="toc-duration-models" class="nav-link" data-scroll-target="#duration-models">Duration Models</a></li>
-  </ul></li>
-  <li><a href="#undergraduate-courses" id="toc-undergraduate-courses" class="nav-link" data-scroll-target="#undergraduate-courses">Undergraduate Courses</a>
-  <ul class="collapse">
-  <li><a href="#introduction-to-python" id="toc-introduction-to-python" class="nav-link" data-scroll-target="#introduction-to-python">Introduction to Python</a></li>
-  <li><a href="#scientific-writing-public-speaking" id="toc-scientific-writing-public-speaking" class="nav-link" data-scroll-target="#scientific-writing-public-speaking">Scientific Writing &amp; Public Speaking</a></li>
-  <li><a href="#public-economics" id="toc-public-economics" class="nav-link" data-scroll-target="#public-economics">Public Economics</a></li>
-  <li><a href="#introduction-to-macroeconomics" id="toc-introduction-to-macroeconomics" class="nav-link" data-scroll-target="#introduction-to-macroeconomics">Introduction to Macroeconomics</a></li>
-  </ul></li>
-  <li><a href="#academic-resources" id="toc-academic-resources" class="nav-link" data-scroll-target="#academic-resources">Academic Resources</a>
-  <ul class="collapse">
-  <li><a href="#in-french" id="toc-in-french" class="nav-link" data-scroll-target="#in-french">In French</a></li>
-  <li><a href="#in-english" id="toc-in-english" class="nav-link" data-scroll-target="#in-english">In English</a></li>
-  </ul></li>
+  <li><a href="#current-courses" id="toc-current-courses" class="nav-link active" data-scroll-target="#current-courses">Current Courses</a></li>
+  <li><a href="#past-and-occasional-courses" id="toc-past-and-occasional-courses" class="nav-link" data-scroll-target="#past-and-occasional-courses">Past and Occasional Courses</a></li>
+  <li><a href="#selected-public-resources" id="toc-selected-public-resources" class="nav-link" data-scroll-target="#selected-public-resources">Selected Public Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -202,232 +381,218 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-body.page-teaching h3 {
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
-  font-weight: 600;
-}
-
-body.page-teaching details {
-  background-color: #fafafa;
-  border-radius: 4px;
-  padding: 0.4rem 0.8rem;
-  border-left: 3px solid #d9d9d9;
-}
-
-body.page-teaching details[open] {
-  background-color: #f5f5f5;
-}
-
-body.page-teaching a {
-  text-decoration: none;
-}
-
-body.page-teaching a:hover {
-  text-decoration: underline;
-}
-body.page-teaching summary {
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-top: 0.6rem;
-  display: block;
-}
-
-body.page-teaching details {
-  margin-bottom: 0.8rem;
-}
-
-body.page-teaching details ul {
-  margin-top: 0.4rem;
-  margin-left: 1rem;
-}
-
-</style>
-<p>I teach undergraduate and graduate courses in economics, econometrics and scientific communication. I make syllabi, slides, assignments and selected solutions available here.</p>
-<section id="graduate-courses" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-courses">Graduate Courses</h2>
-<section id="duration-models" class="level3">
-<h3 class="anchored" data-anchor-id="duration-models">Duration Models</h3>
-<details>
-<summary>
-<strong>Course description</strong>
-</summary>
-<p>Survival analysis: Kaplan–Meier, Cox, AFT, parametric &amp; semi-parametric models.<br>
-Hands-on in R with applied examples.</p>
-</details>
-<details>
-<summary>
-<strong>Materials</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/duration/MD_Seance_1_ED.pdf" target="_blank">Session 1</a></li>
-<li><a href="./media/cours/25_26/duration/MD_Seance_2_ED.pdf" target="_blank">Session 2</a></li>
-<li><a href="./media/cours/25_26/duration/MD_Seance_3_ED.pdf" target="_blank">Session 3</a></li>
-<li><a href="./media/cours/25_26/duration/MD_appendix.pdf" target="_blank">Technical Appendix</a></li>
-<li><a href="./media/cours/25_26/duration/TP_durees_poly.html" target="_blank">TP – Poly</a></li>
-<li><a href="./media/cours/25_26/duration/Template_TP.html" download="Template_TP.Rmd">TP – RMarkdown Template</a></li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Exam</strong>
-</summary>
-<ul>
-<li><p><a href="./media/cours/25_26/duration/MD_Evaluation_ED.pdf" target="_blank">Sujet</a></p>
-</li></ul></details>
-
+<div class="teaching-intro">
+<p>My teaching focuses on applied economics, quantitative methods, experimental methods, and programming for economists.</p>
+</div>
+<section id="current-courses" class="level2">
+<h2 class="anchored" data-anchor-id="current-courses">Current Courses</h2>
+<div class="course-grid">
+<section id="experimental-analysis-of-public-policies" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="experimental-analysis-of-public-policies">Experimental Analysis of Public Policies</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 1<br>
+<strong>Programme:</strong> Master in International Economics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> English<br>
+<strong>Format:</strong> 24h Lectures</p>
+</div>
+<p>This course introduces experimental and quasi-experimental tools for evaluating public policies. Students work from policy questions to identification strategies, empirical diagnostics and written evaluation protocols.</p>
+<p><strong>Main topics:</strong> potential outcomes, randomized controlled trials, power, compliance, attrition, difference-in-differences, event studies, regression discontinuity, synthetic control, heterogeneous effects and pre-analysis plans.</p>
 </section>
+<section id="équilibre-général-et-économie-publique" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="équilibre-général-et-économie-publique">Équilibre général et économie publique</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2, undergraduate<br>
+<strong>Programme:</strong> MIASHS<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 24 hours of lectures and 16 hours of tutorials</p>
+</div>
+<p>The course studies how markets allocate resources and how public policies respond to efficiency, equity and market-failure issues in partial and general equilibrium settings.</p>
+<p><strong>Main topics:</strong> partial equilibrium and surplus, exchange economies, Edgeworth boxes, welfare theorems, externalities, public goods, commons, asymmetric information and education externalities.</p>
 </section>
-<section id="undergraduate-courses" class="level2">
-<h2 class="anchored" data-anchor-id="undergraduate-courses">Undergraduate Courses</h2>
-<section id="introduction-to-python" class="level3">
-<h3 class="anchored" data-anchor-id="introduction-to-python">Introduction to Python</h3>
-<details>
-<summary>
-<strong>Course description</strong>
-</summary>
-<p>Weekly labs; final mini-project aligned with UN SDGs.<br>
-Topics: data types, control flow, functions, files, basic data analysis, plotting.</p>
-</details>
-<details>
-<summary>
-<strong>Lectures</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/python/py_seance_1.pdf" target="_blank">Class 1</a></li>
-<li><a href="./media/cours/25_26/python/py_seance_2.pdf" target="_blank">Class 2</a></li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Labs (TP)</strong>
-</summary>
-<ul>
-<li>TP 1 — <a href="./media/cours/25_26/python/TP_1.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_1_corr.py" target="_blank">Correction</a></li>
-<li>TP 2 — <a href="./media/cours/25_26/python/TP_2.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_2_corr_til_ex4.py" target="_blank">Correction</a></li>
-<li>TP 3 — <a href="./media/cours/25_26/python/TP_3.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/TP_3_corr.py" target="_blank">Correction</a></li>
-<li>TP 4 — <a href="./media/cours/25_26/python/TP_4.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/aviation_2024.csv" target="_blank">Data</a> | <a href="./media/cours/25_26/python/TP_4_corr.py" target="_blank">Correction</a></li>
-<li>TP 5 — <a href="./media/cours/25_26/python/TP_5.pdf" target="_blank">PDF</a> | <a href="./media/cours/25_26/python/top_1_france.csv" target="_blank">Data</a> | <a href="./media/cours/25_26/python/TP5_corr.py" target="_blank">Correction</a></li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Exams</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/python/exam_sujet_1.pdf" target="_blank">Sujet 1</a></li>
-<li><a href="./media/cours/25_26/python/exam_sujet_2.pdf" target="_blank">Sujet 2</a></li>
-</ul>
-</details>
-<hr>
+<section id="introduction-à-python-pour-économistes" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-à-python-pour-économistes">Introduction à Python pour économistes</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2, undergraduate<br>
+<strong>Programme:</strong> Economie-Statistique-Modélisation\ <strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h</p>
+</div>
+<p>This introductory course helps economics students acquire the foundations needed to write short Python scripts and use them for empirical economic analysis.</p>
+<p><strong>Main topics:</strong> terminal and files, scripts, variables, data types, lists, dictionaries, loops, functions, CSV files, <code>pandas</code>, descriptive statistics and basic visualisation.</p>
 </section>
-<section id="scientific-writing-public-speaking" class="level3">
-<h3 class="anchored" data-anchor-id="scientific-writing-public-speaking">Scientific Writing &amp; Public Speaking</h3>
-<details>
-<summary>
-<strong>Course description</strong>
-</summary>
-<p>Structure of papers, clarity, figures and tables, presentations, audience design.</p>
-</details>
-<details>
-<summary>
-<strong>Materials</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/cfm/Seance_1.pdf" target="_blank">Class 1</a></li>
-<li><a href="./media/cours/25_26/cfm/Seance_2.pdf" target="_blank">Class 2</a></li>
-<li><a href="./media/cours/25_26/cfm/Seance_3.pdf" target="_blank">Class 3</a></li>
-<li><a href="./media/cours/25_26/cfm/Seance_4.pdf" target="_blank">Class 4</a></li>
-<li><a href="./media/cours/25_26/cfm/Seance_5.pdf" target="_blank">Class 5</a></li>
-<li><a href="./media/cours/25_26/cfm/Seance_7.pdf" target="_blank">Class 6</a></li>
-<li><a href="https://cloud.web.ined.fr/s/Zn7nEtNjFHf5wog" target="_blank">Reading material</a></li>
-</ul>
-</details>
-<hr>
+<section id="modèles-de-durée-duration-models" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="modèles-de-durée-duration-models">Modèles de durée / Duration Models</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Programme:</strong> Applied econometrics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h</p>
+</div>
+<p>This course introduces duration and survival models with applications in labour economics, health economics and finance. Practical work is conducted in R.</p>
+<p><strong>Main topics:</strong> survival and hazard functions, censoring, truncation, Kaplan-Meier estimation, Nelson-Aalen cumulative hazards, parametric models, Cox proportional hazards and accelerated failure-time models.</p>
 </section>
-<section id="public-economics" class="level3">
-<h3 class="anchored" data-anchor-id="public-economics">Public Economics</h3>
-<details>
-<summary>
-<strong>Course description</strong>
-</summary>
-<p>Efficiency and equity, taxation, public goods, externalities, social insurance.</p>
-</details>
-<details>
-<summary>
-<strong>Lectures (CM)</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_1_ED.pdf" target="_blank">CM 1</a></li>
-<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_2_ED.pdf" target="_blank">CM 2</a></li>
-<li><a href="./media/cours/25_26/eco_pub/Pub_E_Seance_3_ED_V2.pdf" target="_blank">CM 3</a></li>
-<li><a href="./media/cours/25_26/eco_pub/PubE_Seance_4_ED.pdf" target="_blank">CM 4</a></li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Tutorials (TD)</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/eco_pub/TD/TD_1.pdf" target="_blank">TD 1</a></li>
-<li><a href="./media/cours/25_26/eco_pub/TD/TD2_planche.pdf" target="_blank">TD 2</a></li>
-<li><a href="./media/cours/25_26/eco_pub/TD/eco_pub_TD3.pdf" target="_blank">TD 3</a></li>
-<li><a href="./media/cours/25_26/eco_pub/TD/PubE_TD4.pdf" target="_blank">TD 4</a></li>
-</ul>
-</details>
-<hr>
+<section id="introduction-à-la-logique-algorithmique-applications-avec-python" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-à-la-logique-algorithmique-applications-avec-python">Introduction à la logique algorithmique : applications avec Python</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1, undergraduate<br>
+<strong>Programme:</strong> Économie-Statistique-Modélisation<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h</p>
+</div>
+<p>This beginner course introduces algorithmic thinking through Python. The materials use a progressive project-based narrative to move from basic instructions to a small working program.</p>
+<p><strong>Main topics:</strong> variables, types, conditions, loops, lists, dictionaries, functions, random draws, simulations and a final mini-project.</p>
 </section>
-<section id="introduction-to-macroeconomics" class="level3">
+</div>
+</section>
+<section id="past-and-occasional-courses" class="level2">
+<h2 class="anchored" data-anchor-id="past-and-occasional-courses">Past and Occasional Courses</h2>
+<div class="course-grid">
+<section id="conférences-de-méthodes" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="conférences-de-méthodes">Conférences de méthodes</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 3, undergraduate<br>
+<strong>Programme:</strong> Economics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 10 applied sessions</p>
+</div>
+<p>This methods course develops academic writing, oral presentation and source-use skills for economics students.</p>
+</section>
+<section id="introduction-to-macroeconomics" class="level3 course-card">
 <h3 class="anchored" data-anchor-id="introduction-to-macroeconomics">Introduction to Macroeconomics</h3>
-<details>
-<summary>
-<strong>Course description</strong>
-</summary>
-<p>Output, inflation, unemployment; simple models; policy debates.</p>
-</details>
-<details>
-<summary>
-<strong>Lectures (CM)</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/macro/Macro_Seance_7_ED.pdf" target="_blank">CM 7</a></li>
-</ul>
-</details>
-<details>
-<summary>
-<strong>Tutorials (TD)</strong>
-</summary>
-<ul>
-<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_1.pdf" target="_blank">TD 1</a></li>
-<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_2.pdf" target="_blank">TD 2</a></li>
-<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_3.pdf" target="_blank">TD 3</a></li>
-<li><a href="./media/cours/25_26/macro/Intro_Macro_TD_4.pdf" target="_blank">TD 4</a></li>
-</ul>
-</details>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1, undergraduate<br>
+<strong>Programme:</strong> MIASHS<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures</p>
+</div>
+<p>This introductory macroeconomics course covers stylised facts and core short-, medium- and long-run models.</p>
+<p><strong>Main topics:</strong> output, inflation, unemployment, money market, aggregate demand, IS-LM, labour market, macroeconomic equilibrium, policy in closed economy and growth.</p>
 </section>
+<section id="economics-of-education" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="economics-of-education">Economics of Education</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Graduate<br>
+<strong>Institution:</strong> Paris 1- IEDES<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lecture material</p>
+</div>
+<p><strong>Main topics:</strong> historical perspectives, education and labour markets, education and growth, public intervention in education, education production functions, educational inequalities, social mobility and evaluation of education policies.</p>
 </section>
-<section id="academic-resources" class="level2">
-<h2 class="anchored" data-anchor-id="academic-resources">Academic Resources</h2>
-<p><a href="./media/cours/ressources/templates.zip" target="_blank">LaTeX templates</a></p>
-<section id="in-french" class="level3">
-<h3 class="anchored" data-anchor-id="in-french">In French</h3>
-<ul>
-<li><p><a href="./media/cours/ressources/conseil_cv.pdf" target="_blank">Conseils de rédaction CV</a></p></li>
-<li><p><a href="./media/cours/ressources/conseil_LM.pdf" target="_blank">Conseils de rédaction lettre de motivation</a></p></li>
-<li><p><a href="./media/cours/ressources/Co_authorship.pdf" target="_blank">Travailler avec des co-auteurs</a></p></li>
-<li><p><a href="./media/cours/ressources/veille_académique.pdf" target="_blank">Suivre l’actualité Scientifique</a></p></li>
-</ul>
+<section id="globalization-and-development" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="globalization-and-development">Globalization and Development</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 1<br>
+<strong>Institution:</strong> IEDES<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures</p>
+</div>
+<p>This course explores the complex interactions between globalization and development. It introduces students to international trade, global economic trends, worldwide inequalities, environmental challenges, and development policies.</p>
+<p><strong>Main topics:</strong> international trade, globalization, within- and between-country inequality, environmental challenges, development policies, development trajectories.</p>
 </section>
-<section id="in-english" class="level3">
-<h3 class="anchored" data-anchor-id="in-english">In English</h3>
-<ul>
-<li><a href="./media/cours/ressources/paperwriting.pdf" target="_blank">How To Write An Economics Paper?</a></li>
-<li>Writing Tips For Economics Research Papers <a href="./media/cours/ressources/methodo_econo_dagorn_2020.pdf" target="_blank">1</a> &amp; <a href="./media/cours/ressources/Methodo_article.pdf" target="_blank">2</a></li>
-</ul>
+<section id="data-visualization" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinators:</strong> Marion Leturcq &amp; Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Applied computer sessions in R</p>
+</div>
+<p>This course introduces data visualization with R. It focuses on the use of graphs to communicate ideas and empirical results clearly and effectively. Students learn how to improve the readability and aesthetics of figures, with applications using <code>ggplot2</code> and spatial data.</p>
+<p><strong>Main topics:</strong> data visualization, graphical communication, <code>ggplot2</code>, spatial data, maps, legends, labels, titles, interactive visualizations.</p>
+</section>
+<section id="advanced-statistics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="advanced-statistics">Advanced Statistics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 3<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and applied work in R</p>
+</div>
+<p>This course introduces students to core statistical tools used in economics and social sciences. It covers covariance, statistical significance, basic statistical analysis in R, and the use of visualizations to communicate results to non-specialist audiences.</p>
+<p><strong>Main topics:</strong> covariance, statistical significance, statistical inference, R, data visualization, communication of statistical results.</p>
+</section>
+<section id="applied-econometrics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="applied-econometrics">Applied Econometrics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and applied sessions in Stata</p>
+</div>
+<p>This course prepares students to write an empirical master’s thesis using statistical and microeconometric tools. It introduces causal inference, instrumental variables, econometric biases, selection issues, omitted-variable bias, and non-linear models. Applied sessions use Stata and emphasize reproducible statistical programming.</p>
+<p><strong>Main topics:</strong> causal inference, instrumental variables, selection bias, omitted-variable bias, non-linear models, microeconometrics, Stata, reproducibility.</p>
+</section>
+<section id="impact-evaluation" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="impact-evaluation">Impact Evaluation</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and replication-based applied sessions</p>
+</div>
+<p>This course trains students to identify credible counterfactuals using standard econometric tools for impact evaluation. It covers regression discontinuity, matching, difference-in-differences, and synthetic control methods. Each applied session is built around the replication of a research article.</p>
+<p><strong>Main topics:</strong> counterfactual reasoning, regression discontinuity, matching, difference-in-differences, synthetic control, impact evaluation, replication.</p>
+</section>
+<section id="introduction-to-economic-analysis" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-to-economic-analysis">Introduction to Economic Analysis</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Danièle Benezech<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces the fundamental principles of microeconomics. It covers perfect competition, market equilibrium with price and quantity rigidities, elasticities, and the historical foundations of economic analysis through classical texts.</p>
+<p><strong>Main topics:</strong> perfect competition, market equilibrium, price rigidities, quantity rigidities, elasticities, history of economic thought.</p>
+</section>
+<section id="microeconomics-market-imperfections-and-public-economics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="microeconomics-market-imperfections-and-public-economics">Microeconomics: Market Imperfections and Public Economics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2<br>
+<strong>Course coordinator:</strong> Eric Malin<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces public economics in the presence of market imperfections. It focuses on asymmetric information, externalities, and different property-rights regimes.</p>
+<p><strong>Main topics:</strong> public economics, market failures, asymmetric information, externalities, property rights.</p>
+</section>
+<section id="microeconomics-consumer-and-producer-theory" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="microeconomics-consumer-and-producer-theory">Microeconomics: Consumer and Producer Theory</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Olivier L’Haridon<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces the theoretical foundations of economic decision-making by consumers and producers. Students study optimization, constrained maximization, production costs, and profit maximization.</p>
+<p><strong>Main topics:</strong> consumer choice, producer theory, optimization, constrained maximization, production costs, profit maximization.</p>
+</section>
+<section id="macroeconomics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="macroeconomics">Macroeconomics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Fabien Moizeau<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces students to the main issues in macroeconomics. It covers long-run growth, inflation, the labour market, exchange rates, and basic theoretical models such as the Solow model.</p>
+<p><strong>Main topics:</strong> economic growth, inflation, labour market, exchange rates, macroeconomic equilibrium, Solow model.</p>
+</section>
+</div>
+</section>
+<section id="selected-public-resources" class="level2">
+<h2 class="anchored" data-anchor-id="selected-public-resources">Selected Public Resources</h2>
+<p>The resources below are general academic or professional-development materials. Course slides, exercises, solutions, exams and internal teaching documents are not published here.</p>
+<div class="resource-actions">
+<p><a href="./media/cours/ressources/templates.zip" class="resource-btn" target="_blank">LaTeX templates</a> <a href="./media/cours/ressources/conseil_cv.pdf" class="resource-btn" target="_blank">CV writing guide</a> <a href="./media/cours/ressources/conseil_LM.pdf" class="resource-btn" target="_blank">Cover-letter guide</a> <a href="./media/cours/ressources/Co_authorship.pdf" class="resource-btn" target="_blank">Working with co-authors</a> <a href="./media/cours/ressources/veille_académique.pdf" class="resource-btn" target="_blank">Academic monitoring</a> <a href="./media/cours/ressources/paperwriting.pdf" class="resource-btn" target="_blank">Writing an economics paper</a> <a href="./media/cours/ressources/methodo_econo_dagorn_2020.pdf" class="resource-btn" target="_blank">Economics writing tips</a> <a href="./media/cours/ressources/Methodo_article.pdf" class="resource-btn" target="_blank">Article-writing methodology</a></p>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -846,13 +1011,60 @@ Topics: data types, control flow, functions, files, basic data analysis, plottin
   </div>
 </footer>
 <script>
-// open external links in new tab
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('a[href^="http"]').forEach(function(link) {
-    if (!link.href.includes(window.location.hostname)) {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener");
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("body .course-card");
+
+  if (!cards.length) {
+    return;
+  }
+
+  document.body.classList.add("course-js");
+
+  cards.forEach((card, index) => {
+    if (card.querySelector(".course-detail-toggle")) {
+      return;
     }
+
+    const hasDetails = Array.from(card.children).some((child) =>
+      child.matches("p, details.course-outline")
+    );
+
+    if (!hasDetails) {
+      return;
+    }
+
+    const title = card.querySelector("h3")?.textContent?.trim() || `course ${index + 1}`;
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = "course-detail-toggle";
+    const outlines = card.querySelectorAll("details.course-outline");
+
+    button.textContent = "View details";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", `Show details for ${title}`);
+
+    const anchor = card.querySelector(".course-meta") || card.querySelector("h3");
+
+    if (anchor) {
+      anchor.insertAdjacentElement("afterend", button);
+    } else {
+      card.prepend(button);
+    }
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+
+      const isOpen = !card.classList.contains("is-open");
+
+      card.classList.toggle("is-open", isOpen);
+      outlines.forEach((outline) => {
+        outline.open = isOpen;
+      });
+      button.textContent = isOpen ? "Hide details" : "View details";
+      button.setAttribute("aria-expanded", String(isOpen));
+      button.setAttribute("aria-label", `${isOpen ? "Hide" : "Show"} details for ${title}`);
+    });
   });
 });
 </script>

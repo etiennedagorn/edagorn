@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Research – Etienne Dagorn</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./files/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7d7de2a60e502bc36f85499a675057e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+/* Justify all abstract texts */
+.callout-note p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  }
+
+  /* Conteneur publication */
+  .pub {
+    margin: 1rem 0 1.5rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    }
+
+.pub h3 {
+    margin: 0 0 .35rem 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.pub-meta {
+    color: #6b7280;
+    font-size: .92rem;
+    line-height: 1.45;
+}
+
+  .kw { display:inline-block; margin:.15rem .25rem .15rem 0; font-size:.75rem; }
+  /* Barre d’actions */
+  .pub-actions{
+    display:flex; gap:.5rem; flex-wrap:wrap; margin:.45rem 0 .6rem 0;
+  }
+  .pub-btn{
+    display:inline-flex; align-items:center; gap:.4rem;
+    padding:.28rem .6rem; border-radius:999px;
+    border:1px solid #e5e7eb; background:#fff; text-decoration:none;
+    font-size:.85rem; line-height:1.2;
+  }
+  .pub-btn:hover{ background:#f8fafc; border-color:#d1d5db; }
+  .pub-btn.pdf  { border-color:#fecaca; background:#fff5f5; }
+  .pub-btn.repo { border-color:#c7d2fe; background:#eef2ff; }
+  .pub-btn.supp { border-color:#bbf7d0; background:#f0fdf4; }
+  .pub-btn .bi{ font-size:1rem; }
+  /* Liste numérotée plus aérée quand HTML imbriqué */
+  ol > li { margin-bottom: 1.1rem; }
+  .research-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e5e7eb;
+    padding: .5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .research-nav a {
+    padding: .4rem .9rem;
+    border-radius: 999px;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    transition: background .15s;
+  }
+
+  .research-nav a:hover {
+    background: #f3f4f6;
+    color: #111827;
+  }
+
+  .research-nav .nav-count {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #6b7280;
+    font-size: .75rem;
+    font-weight: 600;
+    padding: .1rem .45rem;
+    border-radius: 999px;
+    margin-left: .3rem;
+    vertical-align: middle;
+  }
+  /* Cible le premier élément fort dans un .pub */
+  .pub > p:first-child > strong:first-child {
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: .2rem;
+  }
+
+  /* Publication filter bar */
+  .pub-filter-bar {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .pub-filter {
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #374151;
+    border-radius: 999px;
+    padding: .3rem .75rem;
+    font-size: .85rem;
+    cursor: pointer;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+
+  .pub-filter:hover {
+    background: #f8fafc;
+    border-color: #d1d5db;
+  }
+
+  .pub-filter.active {
+    background: #111827;
+    border-color: #111827;
+    color: #ffffff;
+  }
+  /* Collapsible abstract + main figure */
+  .pub-extra {
+    margin-top: .7rem;
+  }
+
+  .pub-extra summary {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .28rem .6rem;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    font-size: .85rem;
+    line-height: 1.2;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .pub-extra summary:hover {
+    background: #f8fafc;
+    border-color: #d1d5db;
+  }
+
+  .pub-extra summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .pub-extra-content {
+    margin-top: .8rem;
+    padding: .9rem 1rem;
+    border-left: 3px solid #e5e7eb;
+    background: #f9fafb;
+    border-radius: 10px;
+  }
+
+  .pub-extra-content p {
+    text-align: justify;
+    line-height: 1.55;
+  }
+
+  .pub-main-figure {
+    margin: .9rem 0 0 0;
+  }
+
+  .pub-main-figure img {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+  }
+
+  .pub-main-figure figcaption {
+    margin-top: .35rem;
+    color: #6b7280;
+    font-size: .82rem;
+    line-height: 1.35;
+  }
+  /* Figure carousel inside publication cards */
+  .pub-carousel {
+    margin-top: .9rem;
+  }
+
+  .pub-carousel-slide {
+    display: none;
+  }
+
+  .pub-carousel-slide.active {
+    display: block;
+  }
+
+  .pub-carousel-slide img {
+    width: 100%;
+    max-width: 760px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+  }
+
+  .pub-carousel-caption {
+    margin-top: .45rem;
+    color: #6b7280;
+    font-size: .84rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .pub-carousel-controls {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: .65rem;
+  }
+
+  .pub-carousel-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    padding: .28rem .65rem;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-size: .84rem;
+    cursor: pointer;
+  }
+
+  .pub-carousel-btn:hover {
+    background: #f8fafc;
+    border-color: #d1d5db;
+  }
+
+  .pub-carousel-counter {
+    color: #6b7280;
+    font-size: .82rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    // Associe chaque lien nav à l'id de section cible
+    const sections = [
+      { href: "#publications",        label: "Publications" },
+      { href: "#working-papers",      label: "Working Papers" },
+      { href: "#work-in-progress",    label: "Work in Progress" },
+      { href: "#other-publications",  label: "Other Publications" }
+    ];
+
+    sections.forEach(function (s) {
+      const section = document.querySelector(s.href);
+      if (!section) return;
+
+      // Compte les <li> directs dans le <ol> ou <ul> de la section,
+      // jusqu'au prochain <h2>
+      let count = 0;
+      let el = section.nextElementSibling;
+      while (el && el.tagName !== "H2") {
+        if (el.tagName === "OL" || el.tagName === "UL") {
+          count += el.querySelectorAll(":scope > li").length;
+        }
+        el = el.nextElementSibling;
+      }
+
+      // Cherche le lien correspondant dans la nav et ajoute le badge
+      const link = document.querySelector(
+        `.research-nav a[href="${s.href}"]`
+      );
+      if (link && count > 0) {
+        const badge = document.createElement("span");
+        badge.className = "nav-count";
+        badge.textContent = count;
+        link.appendChild(badge);
+      }
+    });
+  });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pubs = document.querySelectorAll(".pub");
+  const filterBar = document.querySelector(".pub-filter-bar");
+
+  if (!filterBar || pubs.length === 0) return;
+
+  // Collect all tags from .pub elements
+  const tags = new Set();
+
+  pubs.forEach(function (pub) {
+    const rawTags = pub.dataset.tags || "";
+    rawTags.split(",").forEach(function (tag) {
+      const cleanTag = tag.trim();
+      if (cleanTag.length > 0) {
+        tags.add(cleanTag);
+      }
+    });
+  });
+
+  // Create one button per tag
+  Array.from(tags).sort().forEach(function (tag) {
+    const button = document.createElement("button");
+    button.className = "pub-filter";
+    button.dataset.filter = tag;
+    button.textContent = tag.replaceAll("-", " ");
+    filterBar.appendChild(button);
+  });
+
+  // Filtering behavior
+  const buttons = document.querySelectorAll(".pub-filter");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const selectedTag = button.dataset.filter;
+
+      buttons.forEach(function (btn) {
+        btn.classList.remove("active");
+      });
+      button.classList.add("active");
+
+      pubs.forEach(function (pub) {
+        const rawTags = pub.dataset.tags || "";
+        const pubTags = rawTags.split(",").map(tag => tag.trim());
+
+        const shouldShow =
+          selectedTag === "all" || pubTags.includes(selectedTag);
+
+        // If .pub is inside a list item, hide the full list item
+        const container = pub.closest("li") || pub;
+        container.hidden = !shouldShow;
+      });
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const carousels = document.querySelectorAll("[data-carousel]");
+
+  carousels.forEach(function (carousel) {
+    const slides = carousel.querySelectorAll(".pub-carousel-slide");
+    const prevButton = carousel.querySelector("[data-prev]");
+    const nextButton = carousel.querySelector("[data-next]");
+    const currentCounter = carousel.querySelector("[data-current]");
+    const totalCounter = carousel.querySelector("[data-total]");
+
+    let currentIndex = 0;
+
+    if (totalCounter) {
+      totalCounter.textContent = slides.length;
+    }
+
+    function showSlide(index) {
+      slides.forEach(function (slide, i) {
+        slide.classList.toggle("active", i === index);
+      });
+
+      if (currentCounter) {
+        currentCounter.textContent = index + 1;
+      }
+    }
+
+    if (prevButton) {
+      prevButton.addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      });
+    }
+
+    if (nextButton) {
+      nextButton.addEventListener("click", function () {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      });
+    }
+
+    showSlide(currentIndex);
+  });
+});
+</script>
+
+
+<link rel="stylesheet" href="custom.css">
+<meta property="og:title" content="Etienne Dagorn | Economist">
+<meta property="og:description" content="I study how incentives, social norms and information shape educational choices and public decisions.">
+<meta property="og:image" content="https://etiennedagorn.github.io/edagorn/files/figures/EER_MCD_figure.png">
+<meta property="og:site_name" content="Etienne Dagorn">
+<meta property="og:image:height" content="1722">
+<meta property="og:image:width" content="2538">
+<meta name="twitter:title" content="Etienne Dagorn | Economist">
+<meta name="twitter:description" content="Etienne Dagorn, Assistant Professor of Economics at the University of Lille.">
+<meta name="twitter:image" content="https://etiennedagorn.github.io/edagorn/files/figures/EER_MCD_figure.png">
+<meta name="twitter:image-height" content="1722">
+<meta name="twitter:image-width" content="2538">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Etienne Dagorn</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./research.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.dropbox.com/scl/fi/8ubd4j2w7lcbr4nnnckmy/CV_DAGORN.pdf?rlkey=ui5uu6h1edjcjivx4h27huxbt&amp;st=g25cp79z&amp;dl=0"> <i class="bi bi-file-earmark-text" role="img">
+</i> 
+<span class="menu-text">CV (PDF)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=IzdTiDgAAAAJ&amp;hl=en&amp;oi=ao"> <i class="bi bi-google-scholar" role="img">
+</i> 
+<span class="menu-text">Scholar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-1105-603X"> <i class="bi bi-orcid" role="img">
+</i> 
+<span class="menu-text">ORCID</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Research</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- Navigation sticky -->
+<nav class="research-nav">
+<p><a href="#publications">Publications</a> <a href="#working-papers">Working Papers</a> <a href="#work-in-progress">Work in Progress</a> <a href="#other-publications">Other Publications</a></p>
+</nav>
+<div class="pub-filter-bar">
+<button class="pub-filter active" data-filter="all">
+<p>All</p>
+</button>
+</div>
+<hr>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<ol reversed="">
+<li>
+<div class="pub" data-year="2026" data-tags="education,teachers,experiment, behavioral">
+<p><strong>Determinants of Gender Discrimination by Teachers: Evidence from an online experiment</strong><br>
+with Marion Monnet (Burgundy) &amp; Philippe Colo (Bern).<br>
+<span class="badge bg-warning text-dark">Accepted</span> <em>European Economic Review</em></p>
+<div class="pub-actions">
+<p><a class="pub-btn supp" href="https://doi.org/10.1016/j.euroecorev.2026.105470" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a> <a class="pub-btn supp" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5254180" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Working paper </a> <a class="pub-btn repo" href=" https://github.com/etiennedagorn/teacher_discrimination" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Code of the experiment </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p><strong>Abstract:</strong> This paper examines whether teachers’ gender biases stem from discrimination, and focuses on two of its potential drivers: gender preferences and beliefs. In an online experiment, 1,840 teachers evaluated fictitious transcripts with randomized gender information. Preferences were measured via dictator games, and beliefs through an Implicit Association Test. While teachers showed no gender preferences, they did hold gender beliefs. Analyzing 19,000 transcript evaluations, we find no evidence of gender-based discrimination. Our findings suggest that simply disclosing a student’s gender does not trigger discrimination, implying that such behaviours are more likely to emerge during direct student-teacher interactions.</p>
+<p><strong>Summarizing figure:</strong> Teachers’ Average Assigned Grade (0-30) by Transcript Profile and Gender</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/EER_MCD_figure.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> EUR Paris Jourdan Sciences Eco and from the Women in Science Chair from University Paris Dauphine</p>
+<p><strong>PAP:</strong> <a href="https://www.socialscienceregistry.org/trials/12302/history/196625">AEA RCT Registry n°AEARCTR-0012302 </a></p>
+</div>
+</details>
+</div>
+</li>
+<li>
+<div class="pub" data-year="2026" data-tags="environment,behavioral,public-policy">
+<p>
+<strong>Human population behavioural traits matter for explaining terrestrial protected area coverage</strong><br> Petit-Cailleux, C., Journé, V., &amp; Dagorn, E. (2026). Human population behavioural traits matter for explaining terrestrial protected area coverage. <em>Biological Conservation</em>, 321, 111971.
+</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Petit_journe_dagorn_biological_conservation_2026.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.biocon.2026.111971" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a> <a class="pub-btn repo" href="https://github.com/ValentinJourne/EconomyEcologyPA" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Code and data </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+<strong>Abstract:</strong> Biodiversity loss demands urgent action, and protected areas are one of the cornerstones of biodiversity conservation measures. While conservation efforts are known to be driven by economic and political factors, there is an absence of literature addressing the potential role played by behavioural traits at the population level. We investigate how population-level behavioural traits influence the proportion of terrestrial protected areas by using large-scale cross-cultural surveys and geospatial data from 71 countries. We show that behavioural traits explain more variation in protected area coverage than economic indicators alone. Furthermore, trust is negatively associated with protected area coverage at the country level, suggesting that high-trust societies rely more on informal conservation practices. These findings challenge conventional models focused on economic and governance drivers and highlight the need for policies that align with population behaviours. Integrating behavioural insights into conservation planning could unlock more effective biodiversity conservation strategies in the era of environmental changes.
+</p>
+<p><strong>Summarizing figure:</strong> a/Maps of population behavioural traits value (trust, patience, risk-taking and altruism) for the 71 countries studied ; b/ Relationship between the protected area coverage (percentage) and behavioural traits</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/BC_fig2.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> MSH Paris Nord (Grant Number: 24 3 B 1).</p>
+<p><strong>Coverage:</strong> <a href="https://www.fondationbiodiversite.fr/en/actualite/beyond-economic-factors-the-role-of-social-behaviour-in-the-establishment-of-protected-areas/"> Fondation pour la Recherche sur la Biodiversité </a></p>
+</div></details>
+</div></li>
+<li>
+<div class="pub" data-year="2026" data-tags="children-teenagers,behavioral,experiment">
+<p><strong>Social Pressure and Pro-social Behaviors Among Teenagers</strong><br>
+Dagorn, E. (2026). <em>Applied Economics</em>, 1–17.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Dagorn_Social_pressure_AE.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn supp" href="https://doi.org/10.1080/00036846.2026.2645678" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+<strong>Abstract:</strong> This study investigates the influence of social pressure on prosocial behaviors among adolescents through a lab-in-the-field experiment. Using a controlled environment where teenagers interact with their classmates, I examine the evolution of cooperation over repeated interactions and explore its determinants. I find that girls and altruistic pupils demonstrate higher levels of cooperation. The introduction of non-monetary rewards and punishments, serving as forms of social pressure, significantly enhances cooperation among adolescents, aligning their behavior with group’s cooperation. Surprisingly, the study finds that the intensity of social pressure does not directly impact cooperation, suggesting that adolescents adapt their pro-social behavior in response to social pressure awareness. This study demonstrates that peer-enforced norms sustain cooperation among adolescents, even in the absence of material incentives.
+</p>
+<p><strong>Summarizing figure:</strong> The figure displays the average contribution to the public good by periods. Periods 1 to 6 are the baseline, 7 to 12 are the (dis)approval treatment.</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/AE_dagorn.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> Caisse des Dépots [eFran-PIA3] and by the Region of Brittany</p>
+</div></details>
+</div></li>
+<li>
+<div class="pub" data-year="2025" data-tags="education,covid,administrative-data">
+<p><strong>Shifting preferences: COVID-19 and higher education application</strong><br>
+Dagorn, E., Meroni, E. C., &amp; Moulin, L. (2025).<br>
+<em>Applied Economics</em>, 1-16.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Dagorn_Meroni_Moulin_choice_preprint.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn supp" href="https://doi.org/10.1080/00036846.2025.2536753" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This study provides descriptive evidence on how the COVID-19 pandemic influenced secondary school students’ application patterns to higher education in France, offering insights into the reallocation of preferences across academic fields and degree types. Using detailed administrative data, we document significant shifts in application shares during 2021, with increased interest in competitive tracks and concurrent declines in applications to bachelor’s and vocational programs. These findings suggest that students responded to the pandemic by favouring structured and selective pathways with clear labour market prospects, moving away from generalist degrees. Students’ share of applications to STEM degrees increased, while applications to health and business programs remained stable. We then analyse the probability of applying to at least one program in a given field or degree and find a decline in application diversification: students narrowed their choices to fewer fields, reflecting a more risk-averse and selective approach in response to the pandemic. Our analysis highlights substantial heterogeneity in these effects across demographic groups.</p>
+<p><strong>Fundings:</strong> Region Ile-de-France under grant number EX061002 - 21010352 (chaire en sciences humaines et sociales)</p>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="pub" data-year="2025" data-tags="public-policy,experiment,children-teenagers">
+<p><strong>The limits of behavioral nudges to increase youth turnout: Experimental evidence from two French elections</strong><br>
+Romaniuc, R. <em>et al.</em> (2025).<br>
+<em>Journal of Economic Behavior &amp; Organization</em>, 236, 107098.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Rustam_Vote_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2025.107098" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> There is a significant gap in turnout between young people and older voters. The failure to instill a voting habit at an early age may have long term consequences in terms of future political participation as well as on other civic behaviors. Using a pre-registered online experiment with 3790 subjects, we implemented behavioral interventions aiming to stimulate youth turnout in the 2022 French presidential election. We rely on an innovative incentive scheme to measure their consequences on (self-reported) actual voting behavior. We also provide evidence on the effect of one behavioral intervention on youth turnout in a less salient election, the French legislative election that took place two months after the Presidential one. The results from the two experiments show the absence of any differences in turnout between the baseline and the treatment conditions. We investigate several mechanisms that can explain our results.</p>
+<p><strong>Summarizing figure:</strong> Average turnout rates across conditions.</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/JEBO_turnout.png" class="figure-img"></p>
+</figure>
+</div></details>
+</div></li>
+<li>
+<div class="pub" data-year="2025" data-tags="education,children-teenagers,behavioral,experiment">
+<p><strong>Altruism, Cooperativeness and Academic Achievement: A Lab in the Field Experiment in French Middle Schools</strong><br>
+Dagorn, E., Masclet, D., &amp; Penard, T. (2025).<br>
+<em>Education Economics</em>, 1-28.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Dagorn_educ_econ_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/q9vax/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Code and data </a> <a class="pub-btn supp" href="https://doi.org/10.1080/09645292.2025.2450424" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+<strong>Abstract:</strong> In this exploratory study, we investigate how altruism and cooperativeness are related to educational achievement. We run a lab in the field experiment with pupils from Middle Schools in Brittany, France, to study whether altruism and cooperativeness are correlated with educational success. Contrary to expectation, we find no significant relationship between cooperativeness and educational performance. In contrast, altruism is negatively related to academic achievement, but this relationship is gender-driven, as it is only significant for boys.
+</p>
+<p><strong>Summarizing figure:</strong> Behavioral Traits and school achievement.</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/EE_fig1.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> Caisse des Dépots [eFran-PIA3] and by the Region of Brittany</p>
+</div></details>
+</div></li>
+<li>
+<div class="pub" data-year="2025" data-tags="education,covid,administrative-data,public-policy">
+<p><strong>Dropping out of university in response to the COVID-19 pandemic</strong><br>
+Dagorn, E., &amp; Moulin, L. (2025). <em>Economics of Education Review</em>, 104, 102604.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Dagorn_Eco_Educ_R_2025.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/djyg5/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Code and data </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.econedurev.2024.102604" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> This study empirically examines the impact of the COVID-19 pandemic on university students’ enrollment behaviors using a comprehensive database of university enrollments from 2012 to 2022. Our analysis reveals a 3.7% decline in the probability of re-enrollment for the subsequent academic year among the first cohort affected by the pandemic. This effect is particularly pronounced among students entering university, as well as among non-free lunch students, international students, and male students. The medium-term analysis indicates that the pandemic led to a significant shift in enrollment behaviors, decreasing the likelihood of enrolling in subsequent years and reducing graduation rates two years after the pandemic. Moreover, we find that exposure to stricter lockdown policies led to a 3.8% decrease in enrollment behaviors. We investigate three potential mechanisms: (i) exposure to the pandemic, (ii) labor market opportunities, and (iii) university quality. However, we find little evidence to support that these factors are significantly associated with changes in enrollment behaviors. These findings contribute to our understanding of the disruptive consequences of the COVID-19 pandemic on students’ educational trajectories and highlight its lasting impact on enrollment behaviors.</p>
+<p><strong>Summarizing figure:</strong> Enrollment behaviors between 2012 and 2020.</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/EER_dagorn_moulin.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> Region Ile-de-France under grant number EX061002 - 21010352 (chaire en sciences humaines et sociales)</p>
+</div></details>
+<p><strong>Coverage:</strong> <a href="https://www.blog-afse.fr/billet/quels-ont-ete-les-effets-de-la-pandemie-sur-labandon-des-etudes-luniversite"> AFSE: Quels ont été les effets de la pandémie sur l’abandon des études à l’université ?</a> ; <a href="https://theconversation.com/avec-la-pandemie-les-abandons-detudes-ont-ils-augmente-a-luniversite-217230"> The Conversation: Avec la pandémie, les abandons d’études ont‑ils augmenté à l’université ? </a> ;</p>
+</div></li>
+
+<li>
+<div class="pub" data-year="2024" data-tags="behavioral,covid,public-policy">
+<p><strong>The role of populations’ behavioral traits in policy-making during a global crisis: Worldwide evidence</strong><br>
+Dagorn, E., Dattilo, M., &amp; Pourieux, M. (2024).<br>
+<em>Journal of Economic Behavior &amp; Organization</em>, 226, 106662.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/Dagorn_JEBO_2024.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a> <a class="pub-btn repo" href="https://osf.io/m3xka/" target="_blank" rel="noopener"> <i class="bi bi-git"></i> Code and data </a> <a class="pub-btn supp" href="https://doi.org/10.1016/j.jebo.2024.06.040" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Publisher / DOI </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> Substantial heterogeneity in behavioral traits has been observed across human societies, which have been linked to important differences in individual as well as societal outcomes. In this paper, we complement the existing literature by investigating the role of key behavioral traits, i.e.&nbsp;risk-taking, patience, altruism, and trust, at the population level in the design of new policies and institutions during an unexpected global crisis. Combining granular data on policy responses to the COVID-19 crisis with several pre-pandemic survey measures of behavioral traits in 109 countries, we observe robust relationships of significant magnitude. In particular, our findings underline that countries with higher levels of trust tended to respond later to the crisis; while populations that are patient, altruistic, and trusting are more likely to implement stringent policies in the medium and long-term. These results improve our understanding of how countries deal with global crises. They also supply an explanation for the lack of coordinated response at the international level during such events.</p>
+<p><strong>Summarizing figure:</strong> Responsiveness to the COVID-19 pandemic and populations’ behavioral traits</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/JEBO_responsiveness.png" class="figure-img"></p>
+</figure>
+</div></details>
+</div></li>
+<section id="working-papers" class="level2">
+<h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
+<div class="pub" data-year="2026" data-tags="education,teachers,experiment">
+<p><strong>Teachers’ Leniency: Experimental Evidence</strong><br>
+with Isaac Parkes (LSE) &amp; Alberto Prati (UCL)<br>
+<em>LSE-CEP Discussion Paper</em><br>
+<a class="pub-btn supp" href="https://cep.lse.ac.uk/_new/publications/abstract.asp?index=12497" target="_blank" rel="noopener"> <i class="bi bi-link-45deg"></i> Preprint </a></p>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+<strong>Abstract:</strong> Two teachers grading the same student can disagree substantially, but the sources of this variation remain unclear. We study this using a large-scale online experiment in which over 1,600 French secondary-school teachers independently graded fictitious student transcripts. With hundreds of ratings per transcript, we decompose variation into transcript and teacher components. Conditional on transcript fixed effects, teacher leniency explains about 40% of residual grade variance. Leniency is largely unrelated to gender, subject, teaching style, or job satisfaction, but is associated with altruism and age. Teachers often perceive themselves as more lenient than colleagues, yet tolerate more disagreement than we observe.
+</p>
+<p><strong>Summarizing figure:</strong> Teachers’ leniency and noise in grading practices.</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/Teacher_leniency_fig1.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> EUR Paris Jourdan Sciences Eco and from the Women in Science Chair from University Paris Dauphine</p>
+<p><strong>PAP:</strong> <a href="https://osf.io/nphvk"> PAP OSF: The marking lottery in secondary education: assessment and solutions </a></p>
+</div>
+</details>
+</div>
+</section>
+<section id="work-in-progress" class="level2">
+<h2 class="anchored" data-anchor-id="work-in-progress">Work in Progress</h2>
+<ol>
+<li>
+<section id="how-teachers-value-school-behavior" class="level3 pub" data-year="2026" data-tags="education,teachers,behavioral,experiment">
+<h3 class="anchored" data-anchor-id="how-teachers-value-school-behavior"><em>How Teachers Value School Behavior</em></h3>
+<div class="pub-meta">
+<p>with Marion Monnet (Burgundy) &amp; Philippe Colo (Bern)<br>
+<span class="badge bg-light text-dark">Draft available upon request</span></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> Teachers translate students’ academic records into grades, distinctions, and written evaluations that shape access to educational opportunities. We study how teachers value school behaviour using a large-scale online experiment with 1,840 French secondary-school teachers who evaluate realistic fictitious transcripts. Academic performance and behavioural indicators—absences and lateness—are independently randomized, allowing us to isolate the causal effect of behaviour while holding achievement fixed. Teachers reward behaviour substantially, but equally across student gender—suggesting behavioural grading is a source of inequality through conduct gaps, not differential treatment. Specifically, good behaviour raises assigned grades by 1.01 points (out of 30) and increases the likelihood of a favourable distinction by 0.28 points on a 7-point scale—equivalent to roughly 7% of the gap between low and high academic performers. Behaviour shapes assessments at all levels of academic performance, not only at the margin. Written feedback, however, is unaffected by behavioural signals. A complementary blind-transcript condition, in which student identity is concealed, yields similar behavioural rewards, indicating that our results reflect valuation of conduct rather than identity-driven inference.</p>
+<p><strong>Summarizing figure:</strong> Teachers’ Assessments by Academic Profile and School Behaviour</p>
+<figure class="pub-main-figure figure">
+<p><img src="./files/figures/WIP_evaluation_behaviors.png" class="figure-img"></p>
+</figure>
+<p><strong>Fundings:</strong> EUR Paris Jourdan Sciences Eco and from the Women in Science Chair from University Paris Dauphine</p>
+</div></details>
+</section></li>
+<li>
+<section id="the-value-of-green-work-among-prospective-workers" class="level3 pub" data-year="2026" data-tags="behavioral,environment,experiment">
+<h3 class="anchored" data-anchor-id="the-value-of-green-work-among-prospective-workers"><em>The Value of Green Work among Prospective Workers</em></h3>
+<div class="pub-meta">
+<p>with Claire Lanvin &amp; Zoé Le Squeren<br>
+<span class="badge bg-light text-dark">Stage: Analyzing the data</span></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> We study how prospective workers value environmental characteristics in job offers and how much salary they are willing to trade for them. University students in business, engineering, economics, and architecture complete a discrete choice experiment in which they choose between realistic job offers varying in environmental mission content, ISO 14001 certification, green employer discourse, public-sector status, telework availability, and salary. Our main estimands are the effects of environmental mission content, certification, and green employer discourse on job choice, together with their salary-equivalent valuations. We also examine heterogeneity in preferences across environmental values, socio-demographic characteristics, and fields of study.</p>
+<p><strong>Fundings:</strong> Institut des transitions environnementales et sociales from University fo Lille</p>
+<p><strong>PAP:</strong> <a href="https://www.socialscienceregistry.org/trials/19818"> AEARCTR-0019818: The Value of Green Work among prospective workers </a></p>
+</div></details>
+</section></li>
+<li>
+<section id="the-hidden-costs-of-excellence-the-carbon-footprint-of-top-5-economics-journals" class="level3 pub" data-year="2026" data-tags="environment,meta-science">
+<h3 class="anchored" data-anchor-id="the-hidden-costs-of-excellence-the-carbon-footprint-of-top-5-economics-journals"><em>The Hidden Costs of Excellence: The Carbon Footprint of Top 5 Economics Journals</em></h3>
+<div class="pub-meta">
+<p>with Clémence Dedinger (Reims)<br>
+<span class="badge bg-light text-dark">Stage: Data collection</span></p>
+</div>
+</section>
+</li>
+<li>
+<section id="teenagers-support-for-smartphone-and-social-media-restrictions-evidence-from-france" class="level3 pub" data-year="2026" data-tags="children-teenagers,behavioral,experiment,meta-science">
+<h3 class="anchored" data-anchor-id="teenagers-support-for-smartphone-and-social-media-restrictions-evidence-from-france"><em>Teenagers’ Support for Smartphone and Social Media Restrictions: Evidence from France</em></h3>
+<div class="pub-meta">
+<p>with Claire Morrier and Nicolas Debarsy<br>
+<span class="badge bg-light text-dark">Stage: Preparing field work</span></p>
+</div>
+</section>
+</li>
+<li>
+<section id="why-protect-the-environment-values-policy-preferences-and-scientist-public-disagreement" class="level3 pub" data-year="2026" data-tags="environment,behavioral,public-policy">
+<h3 class="anchored" data-anchor-id="why-protect-the-environment-values-policy-preferences-and-scientist-public-disagreement"><em>Why Protect the Environment? Values, Policy Preferences, and Scientist-Public (Dis)agreement</em></h3>
+<div class="pub-meta">
+<p>with Clémence Dedinger, Paul-Emile Mangin, Maria J. Montoya-Villalobos, Alizée Cambier<br>
+<span class="badge bg-light text-dark">Stage: Design</span></p>
+</div>
+</section>
+</li>
+</ol>
+<hr>
+<section id="other-publications" class="level2">
+<h2 class="anchored" data-anchor-id="other-publications">Other Publications</h2>
+<div class="pub" data-year="2026" data-tags="children-teenagers,behavioral,experiment">
+<p><em>Les expériences sur les préférences individuelles et sociales des enfants et des adolescents : une revue de la littérature</em><br>
+avec David Masclet et Thierry Penard.<br>
+À paraître dans un ouvrage collectif dirigé par Marc Willinger, Charles Figuières et Adda Benslimane.</p>
+<div class="pub-actions">
+<p><a class="pub-btn pdf" href="./files/papers/dagorn_survey_child.pdf" target="_blank" rel="noopener"> <i class="bi bi-file-earmark-pdf"></i> PDF </a></p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+L’objectif de cet article est de proposer une revue de la littérature des expériences en économie menées auprès d’enfants et d’adolescents. Ces expériences, principalement conduites en laboratoire sur le terrain (« lab in the field »), permettent d’étudier les préférences et les décisions de populations plus jeunes et plus hétérogènes que celles habituellement mobilisées dans les expériences expérimentales classiques, souvent réalisées auprès d’étudiants. Les principaux enseignements de cette littérature montrent que les préférences individuelles et sociales — telles que l’aversion au risque, la coopération ou l’altruisme — évoluent avec l’âge. Ces résultats soulignent l’importance d’adapter les politiques publiques ciblant les enfants et les adolescents en tenant compte des spécificités de leurs préférences.
+</p>
+</div>
+</details>
+</div>
+<div class="pub" data-pub="" data-year="2024" data-tags="meta-science">
+<h3 class="anchored">
+<strong>Reproducibility in Management Science</strong>
+</h3>
+<div class="pub-meta">
+<p>Fišar, M., Greiner, B., Huber, C., Katok, E., Ozkes, A. I., &amp; <em>Management Science Reproducibility Collaboration</em> (2024).<br> <em>Management Science</em>, 70(3), 1343–1356. <span class="badge bg-info text-dark">Collaboration</span> Member of the MS Reproducibility Collaboration.</p>
+</div>
+<details class="pub-extra">
+<summary>
+<i class="bi bi-chevron-down"></i> Details
+</summary>
+<div class="pub-extra-content">
+<p>
+</p><p><strong>Abstract:</strong> With the help of more than 700 reviewers, we assess the reproducibility of nearly 500 articles published in the journal Management Science before and after the introduction of a new Data and Code Disclosure policy in 2019. When considering only articles for which data accessibility and hardware and software requirements were not an obstacle for reviewers, the results of more than 95% of articles under the new disclosure policy could be fully or largely computationally reproduced. However, for 29% of articles, at least part of the data set was not accessible to the reviewer. Considering all articles in our sample reduces the share of reproduced articles to 68%. These figures represent a significant increase compared with the period before the introduction of the disclosure policy, where only 12% of articles voluntarily provided replication materials, of which 55% could be (largely) reproduced. Substantial heterogeneity in reproducibility rates across different fields is mainly driven by differences in data set accessibility. Other reasons for unsuccessful reproduction attempts include missing code, unresolvable code errors, weak or missing documentation, and software and hardware requirements and code complexity. Our findings highlight the importance of journal code and data disclosure policies and suggest potential avenues for enhancing their effectiveness.</p>
+</div></details>
+<p>:::</p>
+<p>:::::</p>
+<p>:::::::::::::</p>
+<p>:::::::::::::::</p>
+<p>::::::::::::::::</p>
+<p>::::::::::::::::::</p>
+<p>:::::::::::::::::::::</p>
+<p>:::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::::</p>
+<p>:::::::::::::::::::::::::::</p>
+<p>:::::::::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::::::::::::::</p>
+<p>::::::::::::::::::::::::::::::::::::::</p>
+<p>:::::::::::::::::::::::::::::::::::::::</p>
+<p>:::::::::::::::::::::::::::::::::::::::::</p>
+
+
+</div>
+</section></section></ol></section></main></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/etiennedagorn\.github\.io\/edagorn");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Last updated: 08/2026</p>
+</div>
+  </div>
+</footer>
+<script>
+// open external links in new tab
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+    if (!link.href.includes(window.location.hostname)) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener");
+    }
+  });
+});
+</script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

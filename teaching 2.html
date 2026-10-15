@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Teaching – Etienne Dagorn</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./files/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7d7de2a60e502bc36f85499a675057e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+body {
+  color: var(--site-ink, #25233a);
+}
+
+body main {
+  max-width: 1120px;
+}
+
+body .teaching-intro {
+  margin: 0.2rem 0 2rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-left: 4px solid var(--site-accent, #8b3d4a);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(37, 35, 58, 0.05);
+}
+
+body .teaching-intro p {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.65;
+}
+
+body main h2 {
+  margin-top: 2.15rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--site-line, #e8e3dc);
+}
+
+body .course-grid,
+body .approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: 1rem;
+  align-items: start;
+  margin: 1rem 0 2.4rem;
+}
+
+body .course-card,
+body .approach-item {
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(37, 35, 58, 0.06);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+body .course-card:hover,
+body .course-card:focus-within,
+body .course-card.is-open {
+  border-color: var(--site-accent, #8b3d4a);
+  box-shadow: 0 14px 34px rgba(37, 35, 58, 0.12);
+}
+
+body .course-card:hover {
+  transform: translateY(-2px);
+}
+
+body .course-card h3,
+body .approach-item h3 {
+  margin: 0 0 0.55rem;
+  color: var(--site-ink, #25233a);
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+body .course-meta {
+  display: block;
+  margin: 0;
+  padding-left: 0.7rem;
+  border-left: 2px solid var(--site-line, #e8e3dc);
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--site-muted, #667085);
+}
+
+body .course-card p,
+body .approach-item p {
+  line-height: 1.6;
+}
+
+body .course-detail-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.2rem;
+  margin-top: 0.85rem;
+  padding: 0.36rem 0.72rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: var(--site-paper, #fbfaf7);
+  color: var(--site-accent, #8b3d4a);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body .course-detail-toggle::after {
+  content: "+";
+  display: inline-grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 1;
+}
+
+body .course-card.is-open .course-detail-toggle {
+  border-color: var(--site-accent, #8b3d4a);
+  background: var(--site-accent, #8b3d4a);
+  color: #fff;
+}
+
+body .course-card.is-open .course-detail-toggle::after {
+  content: "-";
+  color: var(--site-accent, #8b3d4a);
+}
+
+body .course-detail-toggle:hover,
+body .course-detail-toggle:focus {
+  border-color: var(--site-accent, #8b3d4a);
+}
+
+body.course-js .course-card > p,
+body.course-js .course-card > details.course-outline {
+  display: none;
+}
+
+body.course-js .course-card.is-open > p,
+body.course-js .course-card.is-open > details.course-outline {
+  display: block;
+}
+
+body .topic-list {
+  margin: 0.25rem 0 0.75rem;
+  padding-left: 1.05rem;
+}
+
+body .topic-list li {
+  margin-bottom: 0.22rem;
+}
+
+body details.course-outline {
+  margin-top: 0.95rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--site-line, #e8e3dc);
+}
+
+body details.course-outline summary {
+  color: var(--site-accent, #8b3d4a);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+body .course-outline-content {
+  margin-top: 0.55rem;
+  font-size: 0.94rem;
+}
+
+body .materials-policy {
+  margin: 0.95rem 0 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: var(--site-paper, #fbfaf7);
+  color: var(--site-muted, #667085);
+  font-size: 0.92rem;
+}
+
+body .resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+body .resource-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.42rem 0.72rem;
+  border: 1px solid var(--site-line, #e8e3dc);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--site-ink, #25233a);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+body .resource-btn:hover,
+body .resource-btn:focus {
+  border-color: var(--site-accent, #8b3d4a);
+  color: var(--site-accent, #8b3d4a);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  body .course-grid,
+  body .approach-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+
+<link rel="stylesheet" href="custom.css">
+<meta property="og:title" content="Etienne Dagorn | Economist">
+<meta property="og:description" content="I study how incentives, social norms and information shape educational choices and public decisions.">
+<meta property="og:site_name" content="Etienne Dagorn">
+<meta name="twitter:title" content="Etienne Dagorn | Economist">
+<meta name="twitter:description" content="Etienne Dagorn, Assistant Professor of Economics at the University of Lille.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Etienne Dagorn</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.dropbox.com/scl/fi/8ubd4j2w7lcbr4nnnckmy/CV_DAGORN.pdf?rlkey=ui5uu6h1edjcjivx4h27huxbt&amp;st=g25cp79z&amp;dl=0"> <i class="bi bi-file-earmark-text" role="img">
+</i> 
+<span class="menu-text">CV (PDF)</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=IzdTiDgAAAAJ&amp;hl=en&amp;oi=ao"> <i class="bi bi-google-scholar" role="img">
+</i> 
+<span class="menu-text">Scholar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://orcid.org/0000-0002-1105-603X"> <i class="bi bi-orcid" role="img">
+</i> 
+<span class="menu-text">ORCID</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#current-courses" id="toc-current-courses" class="nav-link active" data-scroll-target="#current-courses">Current Courses</a></li>
+  <li><a href="#past-and-occasional-courses" id="toc-past-and-occasional-courses" class="nav-link" data-scroll-target="#past-and-occasional-courses">Past and Occasional Courses</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Teaching</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="teaching-intro">
+<p>My teaching focuses on applied economics, quantitative methods, experimental methods, and programming for economists.</p>
+</div>
+<section id="current-courses" class="level2">
+<h2 class="anchored" data-anchor-id="current-courses">Current Courses</h2>
+<div class="course-grid">
+<section id="experimental-analysis-of-public-policies" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="experimental-analysis-of-public-policies">Experimental Analysis of Public Policies</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 1<br>
+<strong>Programme:</strong> Master in International Economics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> English<br>
+<strong>Format:</strong> 24h Lectures<br>
+<strong>Website:</strong> <a href="https://etiennedagorn.github.io/experimental-method/">Here</a></p>
+</div>
+<p>This course introduces experimental and quasi-experimental tools for evaluating public policies. Students work from policy questions to identification strategies, empirical diagnostics and written evaluation protocols.</p>
+<p><strong>Main topics:</strong> potential outcomes, randomized controlled trials, power, compliance, attrition, difference-in-differences, event studies, regression discontinuity, synthetic control, heterogeneous effects and pre-analysis plans.</p>
+</section>
+<section id="équilibre-général-et-économie-publique" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="équilibre-général-et-économie-publique">Équilibre général et économie publique</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2, undergraduate<br>
+<strong>Programme:</strong> MIASHS<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 24 hours of lectures and 16 hours of tutorials</p>
+</div>
+<p>The course studies how markets allocate resources and how public policies respond to efficiency, equity and market-failure issues in partial and general equilibrium settings.</p>
+<p><strong>Main topics:</strong> partial equilibrium and surplus, exchange economies, Edgeworth boxes, welfare theorems, externalities, public goods, commons, asymmetric information and education externalities.</p>
+</section>
+<section id="introduction-à-python-pour-économistes" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-à-python-pour-économistes">Introduction à Python pour économistes</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2, undergraduate<br>
+<strong>Programme:</strong> Economie-Statistique-Modélisation\ <strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h<br>
+<strong>Website:</strong> <a href="https://etiennedagorn.github.io/intro-python-l2/">Here</a></p>
+</div>
+<p>This introductory course helps economics students acquire the foundations needed to write short Python scripts and use them for empirical economic analysis.</p>
+<p><strong>Main topics:</strong> terminal and files, scripts, variables, data types, lists, dictionaries, loops, functions, CSV files, <code>pandas</code>, descriptive statistics and basic visualisation.</p>
+</section>
+<section id="modèles-de-durée-duration-models" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="modèles-de-durée-duration-models">Modèles de durée / Duration Models</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Programme:</strong> Applied econometrics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h</p>
+</div>
+<p>This course introduces duration and survival models with applications in labour economics, health economics and finance. Practical work is conducted in R.</p>
+<p><strong>Main topics:</strong> survival and hazard functions, censoring, truncation, Kaplan-Meier estimation, Nelson-Aalen cumulative hazards, parametric models, Cox proportional hazards and accelerated failure-time models.</p>
+</section>
+<section id="introduction-à-la-logique-algorithmique-applications-avec-python" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-à-la-logique-algorithmique-applications-avec-python">Introduction à la logique algorithmique : applications avec Python</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1, undergraduate<br>
+<strong>Programme:</strong> Économie-Statistique-Modélisation<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 12h</p>
+</div>
+<p>This beginner course introduces algorithmic thinking through Python. The materials use a progressive project-based narrative to move from basic instructions to a small working program.</p>
+<p><strong>Main topics:</strong> variables, types, conditions, loops, lists, dictionaries, functions, random draws, simulations and a final mini-project.</p>
+</section>
+</div>
+</section>
+<section id="past-and-occasional-courses" class="level2">
+<h2 class="anchored" data-anchor-id="past-and-occasional-courses">Past and Occasional Courses</h2>
+<div class="course-grid">
+<section id="conférences-de-méthodes" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="conférences-de-méthodes">Conférences de méthodes</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 3, undergraduate<br>
+<strong>Programme:</strong> Economics<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> 10 applied sessions</p>
+</div>
+<p>This methods course develops academic writing, oral presentation and source-use skills for economics students.</p>
+</section>
+<section id="introduction-to-macroeconomics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-to-macroeconomics">Introduction to Macroeconomics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1, undergraduate<br>
+<strong>Programme:</strong> MIASHS<br>
+<strong>Institution:</strong> University of Lille<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures</p>
+</div>
+<p>This introductory macroeconomics course covers stylised facts and core short-, medium- and long-run models.</p>
+<p><strong>Main topics:</strong> output, inflation, unemployment, money market, aggregate demand, IS-LM, labour market, macroeconomic equilibrium, policy in closed economy and growth.</p>
+</section>
+<section id="economics-of-education" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="economics-of-education">Economics of Education</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Graduate<br>
+<strong>Institution:</strong> Paris 1- IEDES<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lecture material</p>
+</div>
+<p><strong>Main topics:</strong> historical perspectives, education and labour markets, education and growth, public intervention in education, education production functions, educational inequalities, social mobility and evaluation of education policies.</p>
+</section>
+<section id="globalization-and-development" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="globalization-and-development">Globalization and Development</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 1<br>
+<strong>Institution:</strong> IEDES<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures</p>
+</div>
+<p>This course explores the complex interactions between globalization and development. It introduces students to international trade, global economic trends, worldwide inequalities, environmental challenges, and development policies.</p>
+<p><strong>Main topics:</strong> international trade, globalization, within- and between-country inequality, environmental challenges, development policies, development trajectories.</p>
+</section>
+<section id="data-visualization" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="data-visualization">Data Visualization</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinators:</strong> Marion Leturcq &amp; Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Applied computer sessions in R</p>
+</div>
+<p>This course introduces data visualization with R. It focuses on the use of graphs to communicate ideas and empirical results clearly and effectively. Students learn how to improve the readability and aesthetics of figures, with applications using <code>ggplot2</code> and spatial data.</p>
+<p><strong>Main topics:</strong> data visualization, graphical communication, <code>ggplot2</code>, spatial data, maps, legends, labels, titles, interactive visualizations.</p>
+</section>
+<section id="advanced-statistics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="advanced-statistics">Advanced Statistics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 3<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and applied work in R</p>
+</div>
+<p>This course introduces students to core statistical tools used in economics and social sciences. It covers covariance, statistical significance, basic statistical analysis in R, and the use of visualizations to communicate results to non-specialist audiences.</p>
+<p><strong>Main topics:</strong> covariance, statistical significance, statistical inference, R, data visualization, communication of statistical results.</p>
+</section>
+<section id="applied-econometrics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="applied-econometrics">Applied Econometrics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and applied sessions in Stata</p>
+</div>
+<p>This course prepares students to write an empirical master’s thesis using statistical and microeconometric tools. It introduces causal inference, instrumental variables, econometric biases, selection issues, omitted-variable bias, and non-linear models. Applied sessions use Stata and emphasize reproducible statistical programming.</p>
+<p><strong>Main topics:</strong> causal inference, instrumental variables, selection bias, omitted-variable bias, non-linear models, microeconometrics, Stata, reproducibility.</p>
+</section>
+<section id="impact-evaluation" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="impact-evaluation">Impact Evaluation</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Master 2<br>
+<strong>Course coordinator:</strong> Etienne Dagorn<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Lectures and replication-based applied sessions</p>
+</div>
+<p>This course trains students to identify credible counterfactuals using standard econometric tools for impact evaluation. It covers regression discontinuity, matching, difference-in-differences, and synthetic control methods. Each applied session is built around the replication of a research article.</p>
+<p><strong>Main topics:</strong> counterfactual reasoning, regression discontinuity, matching, difference-in-differences, synthetic control, impact evaluation, replication.</p>
+</section>
+<section id="introduction-to-economic-analysis" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="introduction-to-economic-analysis">Introduction to Economic Analysis</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Danièle Benezech<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces the fundamental principles of microeconomics. It covers perfect competition, market equilibrium with price and quantity rigidities, elasticities, and the historical foundations of economic analysis through classical texts.</p>
+<p><strong>Main topics:</strong> perfect competition, market equilibrium, price rigidities, quantity rigidities, elasticities, history of economic thought.</p>
+</section>
+<section id="microeconomics-market-imperfections-and-public-economics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="microeconomics-market-imperfections-and-public-economics">Microeconomics: Market Imperfections and Public Economics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 2<br>
+<strong>Course coordinator:</strong> Eric Malin<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces public economics in the presence of market imperfections. It focuses on asymmetric information, externalities, and different property-rights regimes.</p>
+<p><strong>Main topics:</strong> public economics, market failures, asymmetric information, externalities, property rights.</p>
+</section>
+<section id="microeconomics-consumer-and-producer-theory" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="microeconomics-consumer-and-producer-theory">Microeconomics: Consumer and Producer Theory</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Olivier L’Haridon<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces the theoretical foundations of economic decision-making by consumers and producers. Students study optimization, constrained maximization, production costs, and profit maximization.</p>
+<p><strong>Main topics:</strong> consumer choice, producer theory, optimization, constrained maximization, production costs, profit maximization.</p>
+</section>
+<section id="macroeconomics" class="level3 course-card">
+<h3 class="anchored" data-anchor-id="macroeconomics">Macroeconomics</h3>
+<div class="course-meta">
+<p><strong>Level:</strong> Licence 1<br>
+<strong>Course coordinator:</strong> Fabien Moizeau<br>
+<strong>Language:</strong> French<br>
+<strong>Format:</strong> Tutorials</p>
+</div>
+<p>This course introduces students to the main issues in macroeconomics. It covers long-run growth, inflation, the labour market, exchange rates, and basic theoretical models such as the Solow model.</p>
+<p><strong>Main topics:</strong> economic growth, inflation, labour market, exchange rates, macroeconomic equilibrium, Solow model.</p>
+</section>
+<section id="selected-public-resources" class="level2">
+<h2 class="anchored" data-anchor-id="selected-public-resources">Selected Public Resources</h2>
+<p>The resources below are general academic or professional-development materials.</p>
+<div class="resource-actions">
+<p><a href="./media/cours/ressources/templates.zip" class="resource-btn" target="_blank">LaTeX templates</a> <a href="./media/cours/ressources/conseil_cv.pdf" class="resource-btn" target="_blank">CV writing guide</a> <a href="./media/cours/ressources/conseil_LM.pdf" class="resource-btn" target="_blank">Cover-letter guide</a> <a href="./media/cours/ressources/Co_authorship.pdf" class="resource-btn" target="_blank">Working with co-authors</a> <a href="./media/cours/ressources/veille_académique.pdf" class="resource-btn" target="_blank">Academic monitoring</a> <a href="./media/cours/ressources/paperwriting.pdf" class="resource-btn" target="_blank">Writing an economics paper</a> <a href="./media/cours/ressources/methodo_econo_dagorn_2020.pdf" class="resource-btn" target="_blank">Economics writing tips</a> <a href="./media/cours/ressources/Methodo_article.pdf" class="resource-btn" target="_blank">Article-writing methodology</a></p>
+</div>
+
+
+</section>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/etiennedagorn\.github\.io\/edagorn");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Last updated: 08/2026</p>
+</div>
+  </div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("body .course-card");
+
+  if (!cards.length) {
+    return;
+  }
+
+  document.body.classList.add("course-js");
+
+  cards.forEach((card, index) => {
+    if (card.querySelector(".course-detail-toggle")) {
+      return;
+    }
+
+    const hasDetails = Array.from(card.children).some((child) =>
+      child.matches("p, details.course-outline")
+    );
+
+    if (!hasDetails) {
+      return;
+    }
+
+    const title = card.querySelector("h3")?.textContent?.trim() || `course ${index + 1}`;
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.className = "course-detail-toggle";
+    const outlines = card.querySelectorAll("details.course-outline");
+
+    button.textContent = "View details";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", `Show details for ${title}`);
+
+    const anchor = card.querySelector(".course-meta") || card.querySelector("h3");
+
+    if (anchor) {
+      anchor.insertAdjacentElement("afterend", button);
+    } else {
+      card.prepend(button);
+    }
+
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+
+      const isOpen = !card.classList.contains("is-open");
+
+      card.classList.toggle("is-open", isOpen);
+      outlines.forEach((outline) => {
+        outline.open = isOpen;
+      });
+      button.textContent = isOpen ? "Hide details" : "View details";
+      button.setAttribute("aria-expanded", String(isOpen));
+      button.setAttribute("aria-label", `${isOpen ? "Hide" : "Show"} details for ${title}`);
+    });
+  });
+});
+</script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
